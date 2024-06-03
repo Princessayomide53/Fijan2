@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+.special-font {
+  font-family: 'Katibeh', serif;
+}
+.card::-webkit-scrollbar {
+  width: 0px;
+}
+
+.faq-item.open .faq-question {
+  background-color: #098666;
+  color: white !important;
+  border: 1px solid #098666;
+}
+
+.faq-item .faq-answer {
+  background-color: white; /* Keep the background white */
+  color: #26465b; /* Change to your desired text color */
+  display: none;
+}
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-item.open .faq-question {
+  /* color: #26465b;  */
+  color: white;
+}
+.faq-question {
+  color: #26465b;
+}
+.dropdown-content {
+  display: none;
+}
+.dropdown-content.show {
+  display: block;
+}

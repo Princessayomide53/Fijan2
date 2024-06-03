@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section
+      class="bg-gradient-to-r z-[100] fixed py-[2.6rem] lg:py-14 from-[#ffffff] to-[#71C8E4] w-full"
+    >
+      <nav
+        class="mac:max-w-[83rem] absolute top-7 lg:top-8 z-50 left-0 right-0 md:max-w-[45rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[20.5rem] iphone:max-w-[22rem] lg:max-w-[60rem] mx-auto flex justify-between"
+      >
+        <div class="flex justify-items-start items-center gap-2 mt-2">
+          <a href="index.html">
+          <img
+            src="./images/Logo.png"
+            alt="logo"
+            class="h-[2rem] xl:w-[39.301px] lg:w-[35.301px] lg:h-[45px] xl:h-[49px]"
+          />
+          <h2
+            class="text-[#0171BB] md:text-[1.5rem] lg:text-[1.5rem] xl:text-[2rem] mac:text-[2.23rem] font-bold leading-[28.697px]"
+          >
+            FIJAN
+            </a>
+          </h2>
+        </div>
+        <ul
+          class="lg:flex hidden xl:space-x-[1.5rem] lg:space-x-[1.4rem] mac:space-x-[3rem] lg:mt-4 xl:mt-3 mt-2 z-20"
+        >
+          <li class='xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg hover:bg-white transition duration-150 leading-[16px] font-medium rounded-full border-2 border-[#014470] flex justify-center items-center'><a href="index.html" class="nav-button">Home</a></li>
+          <li class='xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center'><a href="about.html" class="nav-button">About</a></li>
+          <li class="dropdown">
+            <button class="xl:px-7 lg:px-4 gap-2 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">
+              Job Seekers <i class="fas fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu hidden">
+              <li><a href="/nurses" class="dropdown-item">Nurses</a></li>
+              <li>
+                <a href="/medicalDoctors" class="dropdown-item"
+                  >Medical Doctors</a
+                >
+              </li>
+              <li>
+                <a href="/careSupport" class="dropdown-item"
+                  >Care Support Worker</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="employers.html" class="xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">Employers</a></li>
+          <li><a href="contact.html" class="xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">Contact Us</a></li>
+        </ul>
+        <ul class="mt-2 hidden lg:flex">
+          <li class="lg:px-5 xl:px-7 py-1 font-semibold flex justify-center items-center rounded-full bg-[#098666] text-white"><a href="#section1">Register Now</a></li>
+        </ul>
+
+        <!-- mobile -->
+        <ul class="flex justify-between lg:hidden">
+          <li class="">
+            <a href="index.html">
+              <!-- <img src="./images/logo.png"  alt="" />c:\Users\user\Desktop\Frontend\Cabana\Cabana\build\images\close.png -->
+            </a>
+          </li>
+
+          <button
+            class="mr-4"
+            id="openMenuButton"
+            class="text-gray-300 mt-3 hover:bg-black hover:text-yellow-500 rounded-full"
+          >
+            <span id="mobile-open" class="mobile-open pt-2">
+              <img src="./images/hamburger.png" width="27" />
+            </span>
+
+            <span id="mobile-close" class="mobile-close mt-2 hidden">
+              <img src="./images/close.png" width="23" />
+            </span>
+          </button>
+        </ul></nav>
+        <div
+          id="mobile-menu-list"
+          class="mobile-menu-list hidden absolute top-0 text-3xl bg-gradient-to-r from-[#ffffff] to-[#71C8E4] w-full z-10 flex items-center origin-start h-[100vh] justify-center center overflow-hidden"
+        >
+        
+          <ul
+            class=" flex flex-col space-y-[3rem] mt-5 p-7 text-[#014470] hover:text-[#098666] uppercase animate-open-menu"
+          >
+          <li class="">
+            <a class="" href="index.html">Home</a>
+          </li>
+            <li class="">
+              <a class="" href="about.html">About</a>
+            </li>
+            <li class="">
+              <a href=".html">Services</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+            <li>
+              <a href="employers.html">Employers</a>
+            </li>
+            <!-- <li>
+              <a href="contact.html"> book now</a>
+            </li> -->
+          </ul>
+        </div>
+      
+      
+    </section>
+    <main>
+      <section
+        class="bg-gradient-to-r from-[#ffffff] to-[#71C8E4] w-full h-[20.5rem] md:h-[18rem] lg:h-[23rem] xl:h-[26rem]"
+      >
+        <div
+          class="mac:max-w-[83rem] md:max-w-[45rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[22rem] mx-auto"
+        >
+          <h2
+            class="text-center pt-[7rem] md:pt-[5rem] lg:pt-[8rem] xl:pt-[8.1rem] text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[6.2rem] text-[#014470] font-normal leading-[4rem] lg:leading-[5.2rem] xl:leading-[6.3rem] special-font"
+          >
+            About Us
+          </h2>
+          <div
+            class="md:flex hidden items-center justify-center pt-[1.5rem] md:pt-[3rem] lg:pt-[3rem] xl:pt-[1rem]"
+          >
+            <img
+              src="./images/smile.png"
+              alt=""
+              class="object-contain w-[20rem] md:w-[42rem] mac:w-[80rem] lg:w-[57rem] mac:h-[30rem] xl:w-[70rem] xl:h-[28rem]"
+            />
+          </div>
+          <div
+            class="md:hidden flex items-center justify-center pt-[2.7rem] md:pt-[3rem] lg:pt-[2rem] xl:pt-[1rem]"
+          >
+            <img
+              src="./images/smile2.png"
+              alt=""
+              class="object-contain w-[20rem] md:w-[42rem] mac:w-[80rem] lg:w-[57rem] mac:h-[30rem] xl:w-[70rem] xl:h-[28rem]"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- services -->
+      <section
+        class="mac:max-w-[83rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[20.5rem] iphone:max-w-[22rem] mx-auto md:mt-[13rem] mt-[10rem] lg:mt-[18rem] xl:mt-[24rem]"
+      >
+        <h5
+          class="text-[#098666] text-center md:text-left text-sm leading-[20px] md:text-base lg:text-[1.58rem] font-semibold md:leading-[1.58rem]"
+        >
+          OUR SERVICES
+        </h5>
+        <h3
+          class="special-font text-center md:text-left text-[#014470] text-3xl md:text-[3rem] lg:text-[3rem] xl:text-[4.5rem] font-normal md:leading-[3rem] lg:leading-[4.4rem]"
+        >
+          Who we are
+        </h3>
+        <div
+          class="flex flex-col md:flex-row gap-[3rem] md:gap-[5rem] py-[2rem]"
+        >
+          <p
+            class="text-[#26465B] flex-wrap text-sm lg:text-[1.1rem] lg:px-2 text-justify font-normal leading-[1.75rem]"
+          >
+            Fijan healthcare is a pioneering healthcare recruitment agency
+            committed to revolutionising the healthcare staffing landscape and
+            addressing the care sector’s pressing challenges. With an
+            unparalleled amalgamation of over four decades of experience in
+            recruitment and care, we have cemented an unmatched reputation
+            within the healthcare recruitment domain.Situated in the UK, our
+            head office serves as the nerve centre for devising cutting-edge
+            healthcare recruitment strategies and executing impactful campaigns
+            that span the nation.
+          </p>
+          <div class="md:hidden grid grid-cols-1 gap-7">
+            <img
+              src="./images/about1.png"
+              alt=""
+              class="lg:w-[14.5rem] h-[8.5rem]"
+            />
+            <img
+              src="./images/about2.png"
+              alt=""
+              class="lg:w-[16.5rem] h-[12.5rem] md:-mt-2 lg:-mt-0 flex justify-self-end"
+            />
+          </div>
+
+          <p
+            class="text-[#26465B] flex-wrap text-justify text-sm lg:text-[1.1rem] md:px-5 lg:px-2 font-normal leading-[1.75rem]"
+          >
+            Our adept team of Recruitment Advisors endeavours to identify and
+            connect the most adept and dedicated nurses and care professionals
+            with the specific requirements and aspirations of each esteemed care
+            provider.We recognise the singular nature of care work – a vocation
+            that embodies profound responsibilities and trust. This
+            understanding propels us to ensure that our recruitment processes
+            transcend mere efficiency and accuracy; they are infused with
+            meticulousness and depth
+          </p>
+        </div>
+        <div
+          class="gap-8 hidden md:flex md:flex-row flex-wrap md:justify-around xl:flex-nowrap lg:justify-between mac:justify-around items-center object-contain md:pt-[1.5rem] lg:pt-[2rem] mb-[7rem]"
+        >
+          <img
+            src="./images/about1.png"
+            alt=""
+            class="lg:w-[14.5rem] hidden md:flex h-[8.5rem]"
+          />
+          <img src=./images/about2.png alt='' class='lg:w-[16.5rem] h-[12.5rem]
+          hidden md:flex md:-mt-2 lg:-mt-0' />
+          <img
+            src="./images/about4.png"
+            alt=""
+            class="lg:w-[17rem] hidden md:flex h-[14rem]"
+          />
+          <img
+            src="./images/about3.png"
+            alt=""
+            class="lg:w-[18rem] h-[18rem] hidden md:flex md:mt-7 lg:mt-0"
+          />
+        </div>
+
+        <div class="md:hidden gap-7 grid grid-cols-1 mb-16">
+          <img
+            src="./images/about4.png"
+            alt=""
+            class="lg:w-[17rem] h-[14rem]"
+          />
+          <img
+            src="./images/about3.png"
+            alt=""
+            class="lg:w-[18rem] h-[18rem] flex justify-self-end md:mt-7 lg:mt-0"
+          />
+        </div>
+      </section>
+      <!-- mission -->
+      <section
+        class="bg-[#E1F8FF] w-full h-[70.8rem] md:h-[41.7875rem] lg:h-[47.7875rem] xl:h-[48.1875rem] py-[1.7rem] md:py-[2rem] lg:py-[3rem] xl:py-[2rem]"
+      >
+        <p
+          class="text-center pb-[25px] md:pb-[44px] text-[#014470] special-font text-[42px] md:text-[55px] lg:text-[65px] xl:text-[72px] font-normal leading-[70px]"
+        >
+          Our philosophy
+        </p>
+
+        <p
+          class="max-w-[20.5rem] iphone:max-w-[22rem] text-justify md:text-left md:max-w-[42rem] lg:max-w-[57rem] xl:max-w-[70rem] mac:max-w-[75rem] mx-auto text-sm leading-[25px] md:px-0 pb-[45px] md:pb-[80px] md:text-xs text-[#26465B] lg:text-base xl:text-[20px] font-normal md:leading-[20px] lg:leading-[30px]"
+        >
+          Over the years, we have realised that the fabric of the care
+          industry’s success is interwoven with the calibre and
+          <br class="hidden md:block" />
+          character of those who form its backbone. Our quest for individuals
+          who epitomise respect, empathy, professionalism,
+          <br class="hidden md:block" />
+          and compassion transcends mere criteria for selection; these values
+          form the bedrock of our organisational ethos.
+          <br class="hidden md:block" />
+          Fijan healthcare is one of the carer recruitment agencies, founded
+          with the unwavering purpose of alleviating the
+          <br class="hidden md:block" />
+          convolutions faced by employers while seeking dependable care staff
+          while widening access to the care sector for an
+          <br class="hidden md:block" />
+          elite cadre of professionals who possess unparalleled skills and
+          dedication. <br class="block" />
+          <br class="" />
+          At the heart of our mission lies a deep-rooted respect and reverence
+          for the invaluable contributions the care
+          <br class="hidden md:block" />
+          profession bestows upon society.Understanding the profound impact that
+          quality care can exert on an individual’s life,
+          <br class="hidden md:block" />
+          we are steadfastly committed to ensuring that your recruitment
+          endeavors succeed immediately.
+        </p>
+        <div
+          class="flex flex-row justify-between mac:justify-around md:max-w-[42rem] lg:max-w-[57rem] xl:max-w-[70rem] mac:max-w-[75rem] pro:max-w-[52rem] max-w-[20.5rem] iphone:max-w-[22rem] mx-auto"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-[3rem] md:gap-[3.5rem] lg:gap-[5rem] xl:gap-[8rem] xl:pt-0"
+          >
+            <div>
+              <span class="flex gap-3 md:gap-5">
+                <div
+                  class="bg-[#0171BB] w-[45px] lg:w-[55px] h-[25px] flex justify-center items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.6256 10.3621C13.4987 10.6684 13.4987 11.0567 13.4987 11.8333V13.3287C13.4987 13.4094 13.4987 13.4498 13.4736 13.4748C13.4486 13.4999 13.4082 13.4999 13.3275 13.4999H11.832C11.0555 13.4999 10.6672 13.4999 10.3609 13.6268C9.95251 13.7959 9.62806 14.1204 9.4589 14.5288C9.33203 14.8351 9.33203 15.2233 9.33203 15.9999C9.33203 16.7765 9.33203 17.1648 9.4589 17.4711C9.62806 17.8794 9.95251 18.2039 10.3609 18.3731C10.6672 18.4999 11.0555 18.4999 11.832 18.4999H13.3275C13.4082 18.4999 13.4486 18.4999 13.4736 18.525C13.4987 18.5501 13.4987 18.5904 13.4987 18.6711V20.1666C13.4987 20.9432 13.4987 21.3314 13.6256 21.6377C13.7947 22.0461 14.1192 22.3706 14.5276 22.5397C14.8338 22.6666 15.2221 22.6666 15.9987 22.6666C16.7753 22.6666 17.1636 22.6666 17.4698 22.5397C17.8782 22.3706 18.2027 22.0461 18.3718 21.6377C18.4987 21.3314 18.4987 20.9432 18.4987 20.1666V18.6711C18.4987 18.5904 18.4987 18.5501 18.5238 18.525C18.5488 18.4999 18.5892 18.4999 18.6699 18.4999H20.1654C20.9419 18.4999 21.3302 18.4999 21.6365 18.3731C22.0449 18.2039 22.3693 17.8794 22.5385 17.4711C22.6654 17.1648 22.6654 16.7765 22.6654 15.9999C22.6654 15.2233 22.6654 14.8351 22.5385 14.5288C22.3693 14.1204 22.0449 13.7959 21.6365 13.6268C21.3302 13.4999 20.9419 13.4999 20.1654 13.4999H18.6699C18.5892 13.4999 18.5488 13.4999 18.5238 13.4748C18.4987 13.4498 18.4987 13.4094 18.4987 13.3287V11.8333C18.4987 11.0567 18.4987 10.6684 18.3718 10.3621C18.2027 9.95373 17.8782 9.62928 17.4698 9.46012C17.1636 9.33325 16.7753 9.33325 15.9987 9.33325C15.2221 9.33325 14.8338 9.33325 14.5276 9.46012C14.1192 9.62928 13.7947 9.95373 13.6256 10.3621Z"
+                      stroke="white"
+                      stroke-width="1.30258"
+                    />
+                  </svg>
+                </div>
+                <h4
+                  class="md:pt-[0.2rem] pt-1 pb-[22px] md:pb-[2rem] text-[#098666] text-base lg:text-[1.4rem] font-semibold leading-[1.25rem]"
+                >
+                  OUR MISSION
+                </h4>
+              </span>
+              <p
+                class="text-[#26465B] flex-wrap leading-[28px] text-sm lg:text-base xl:text-[1.25rem] lg:w-[25rem] text-justify xl:w-[30rem] mac:w-[34.5rem] font-normal lg:leading-[1.9rem]"
+              >
+                To transform care recruitment through unwavering dedication to
+                excellence, matching the finest care professionals with
+                employers, and elevating the care sector’s standards to
+                unprecedented heights.
+              </p>
+            </div>
+
+            <div>
+              <span class="flex gap-3 md:gap-5">
+                <div
+                  class="bg-[#0171BB] w-[45px] lg:w-[55px] h-[25px] flex justify-center items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.6256 10.3621C13.4987 10.6684 13.4987 11.0567 13.4987 11.8333V13.3287C13.4987 13.4094 13.4987 13.4498 13.4736 13.4748C13.4486 13.4999 13.4082 13.4999 13.3275 13.4999H11.832C11.0555 13.4999 10.6672 13.4999 10.3609 13.6268C9.95251 13.7959 9.62806 14.1204 9.4589 14.5288C9.33203 14.8351 9.33203 15.2233 9.33203 15.9999C9.33203 16.7765 9.33203 17.1648 9.4589 17.4711C9.62806 17.8794 9.95251 18.2039 10.3609 18.3731C10.6672 18.4999 11.0555 18.4999 11.832 18.4999H13.3275C13.4082 18.4999 13.4486 18.4999 13.4736 18.525C13.4987 18.5501 13.4987 18.5904 13.4987 18.6711V20.1666C13.4987 20.9432 13.4987 21.3314 13.6256 21.6377C13.7947 22.0461 14.1192 22.3706 14.5276 22.5397C14.8338 22.6666 15.2221 22.6666 15.9987 22.6666C16.7753 22.6666 17.1636 22.6666 17.4698 22.5397C17.8782 22.3706 18.2027 22.0461 18.3718 21.6377C18.4987 21.3314 18.4987 20.9432 18.4987 20.1666V18.6711C18.4987 18.5904 18.4987 18.5501 18.5238 18.525C18.5488 18.4999 18.5892 18.4999 18.6699 18.4999H20.1654C20.9419 18.4999 21.3302 18.4999 21.6365 18.3731C22.0449 18.2039 22.3693 17.8794 22.5385 17.4711C22.6654 17.1648 22.6654 16.7765 22.6654 15.9999C22.6654 15.2233 22.6654 14.8351 22.5385 14.5288C22.3693 14.1204 22.0449 13.7959 21.6365 13.6268C21.3302 13.4999 20.9419 13.4999 20.1654 13.4999H18.6699C18.5892 13.4999 18.5488 13.4999 18.5238 13.4748C18.4987 13.4498 18.4987 13.4094 18.4987 13.3287V11.8333C18.4987 11.0567 18.4987 10.6684 18.3718 10.3621C18.2027 9.95373 17.8782 9.62928 17.4698 9.46012C17.1636 9.33325 16.7753 9.33325 15.9987 9.33325C15.2221 9.33325 14.8338 9.33325 14.5276 9.46012C14.1192 9.62928 13.7947 9.95373 13.6256 10.3621Z"
+                      stroke="white"
+                      stroke-width="1.30258"
+                    />
+                  </svg>
+                </div>
+                <h4
+                  class="md:pt-[0.2rem] pt-1 pb-[22px] md:pb-[2rem] text-[#098666] text-base lg:text-[1.4rem] font-semibold leading-[1.25rem]"
+                >
+                  OUR VISION
+                </h4>
+              </span>
+              <p
+                class="text-[#26465B] flex-wrap leading-[28px] text-sm text-justify lg:w-[25rem] lg:text-base xl:text-[1.25rem] xl:w-[30rem] mac:w-[34.5rem] font-normal lg:leading-[1.9rem]"
+              >
+                To envision a future where the care sector thrives on a
+                foundation of exceptional talent, seamless recruitment, and a
+                profound sense of purpose – enriching lives, one caregiver at a
+                time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- values -->
+      <section
+        class="mac:max-w-[83rem] md:max-w-[45rem] xl:max-w-[75rem] lg:max-w-[60rem] pro:max-w-[52rem] max-w-[20.5rem] iphone:max-w-[22rem] mx-auto pt-[3.6rem] md:pt-[4rem] lg:pt-[5rem]"
+      >
+        <h5
+          class="text-[#098666] pb-[12px] md:pb-0 text-center text-base lg:text-[1.38rem] font-semibold leading-[1.58rem]"
+        >
+          OUR CORE VALUES
+        </h5>
+        <h3
+          class="special-font text-[42px] text-center leading-[40px] md:text-[2.5rem] text-[#014470] lg:text-[3.2rem] mac:text-[4.5rem] font-normal md:leading-[4.4rem]"
+        >
+          Exquisite Care,
+          <br class="md:hidden" />
+          Exceptional Values
+        </h3>
+        <article
+          class="grid grid-cols-1 md:grid-cols-2 gap-[32px] md:gap-[2.5rem] place-items-center pb-[4.5rem] pt-[2rem] md:pt-[3rem] lg:pt-[4.5rem] md:pb-[4rem] lg:pb-[6rem]"
+        >
+          <div
+            class="shadow-lg shadow-[#0000001F] h-[9.3rem] lg:w-[25.75rem] xl:w-[34.75rem] px-[0.9rem] mac:w-[36.75rem] md:px-[0.75rem] py-[0.75rem] lg:px-[1rem] xl:px-[2rem] lg:py-[1rem] rounded-3xl md:h-[12.125rem] lg:h-[12.225rem] mac:h-[11.125rem]"
+          >
+            <div class="flex gap-3 md:gap-5">
+              <div
+                class="w-[120px] h-[120px] md:w-[150px] md:h-[150px] mt-[47px] md:mt-7 xl:mt-9"
+              >
+                <img src="./images/Icon.png" alt="" class="object-fill" />
+              </div>
+              <div class="flex flex-col md:gap-y-2 lg:gap-y-3 xl:gap-y-2">
+                <h2
+                  class="text-[#014470] text-xl special-font font-normal md:text-xl lg:text-[20px] xl:text-[1.75rem] leading-normal"
+                >
+                  Discipline
+                </h2>
+                <p
+                  class="text-[#26465B] font-normal text-[11px] md:pt-0 pt-[0.2rem] md:text-[12px] lg:text-[13px] xl:text-[0.8775rem] leading-[18px] md:leading-[22.4px] lg:leading-[1.4rem]"
+                >
+                  We maintain a strong work ethic and professional
+                  attitude,adhering to high standards of conduct and
+                  responsibility. By staying focused and dedicated to our
+                  mission, we ensure consistent and reliable services for our
+                  clients.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 2nd -->
+          <div
+            class="shadow-lg shadow-[#0000001F] h-[9.3rem] lg:w-[25.75rem] xl:w-[34.75rem] px-[0.9rem] mac:w-[36.75rem] md:px-[0.75rem] py-[0.75rem] lg:px-[1rem] xl:px-[2rem] lg:py-[1rem] rounded-3xl md:h-[12.125rem] lg:h-[12.225rem] mac:h-[11.125rem]"
+          >
+            <div class="flex gap-3 md:gap-5">
+              <div
+                class="w-[120px] h-[120px] md:w-[150px] md:h-[150px] mt-[47px] md:mt-7 xl:mt-9"
+              >
+                <img src="./images/Icon.png" alt="" class="object-fill" />
+              </div>
+              <div class="flex flex-col md:gap-y-2 lg:gap-y-3 xl:gap-y-2">
+                <h2
+                  class="text-[#014470] text-xl special-font font-normal md:text-xl lg:text-[20px] xl:text-[1.75rem] leading-normal"
+                >
+                  Hardwork
+                </h2>
+                <p
+                  class="text-[#26465B] font-normal text-[11px] md:pt-0 pt-[0.2rem] md:text-[12px] lg:text-[13px] xl:text-[0.8775rem] leading-[18px] md:leading-[22.4px] lg:leading-[1.4rem]"
+                >
+                  Our team is committed to going above and beyond in our efforts
+                  to provide exceptional care and support. Through diligence and
+                  perseverance, we overcome challenges and continuously improve
+                  our services.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 3rd -->
+          <div
+            class="shadow-lg shadow-[#0000001F] h-[9.3rem] lg:w-[25.75rem] xl:w-[34.75rem] px-[0.9rem] mac:w-[36.75rem] md:px-[0.75rem] py-[0.75rem] lg:px-[1rem] xl:px-[2rem] lg:py-[1rem] rounded-3xl md:h-[12.125rem] lg:h-[12.225rem] mac:h-[11.125rem]"
+          >
+            <div class="flex gap-3 md:gap-5">
+              <div
+                class="w-[120px] h-[120px] md:w-[150px] md:h-[150px] mt-[47px] md:mt-7 xl:mt-9"
+              >
+                <img src="./images/Icon.png" alt="" class="object-fill" />
+              </div>
+              <div class="flex flex-col md:gap-y-2 lg:gap-y-3 xl:gap-y-2">
+                <h2
+                  class="text-[#014470] text-xl special-font font-normal md:text-xl lg:text-[20px] xl:text-[1.75rem] leading-normal"
+                >
+                  Honesty
+                </h2>
+                <p
+                  class="text-[#26465B] font-normal text-[11px] md:pt-0 pt-[0.2rem] md:text-[12px] lg:text-[13px] xl:text-[0.8775rem] leading-[18px] md:leading-[22.4px] lg:leading-[1.4rem]"
+                >
+                  We value open and transparent communication, fostering trust
+                  and credibility in all our interactions. Our commitment to
+                  honesty ensures that we act with integrity, always putting the
+                  needs of our clients first.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 4th -->
+          <div
+            class="shadow-lg shadow-[#0000001F] h-[9.3rem] lg:w-[25.75rem] xl:w-[34.75rem] px-[0.9rem] mac:w-[36.75rem] md:px-[0.75rem] py-[0.75rem] lg:px-[1rem] xl:px-[2rem] lg:py-[1rem] rounded-3xl md:h-[12.125rem] lg:h-[12.225rem] mac:h-[11.125rem]"
+          >
+            <div class="flex gap-3 md:gap-5">
+              <div
+                class="w-[120px] h-[120px] md:w-[150px] md:h-[150px] mt-[47px] md:mt-7 xl:mt-9"
+              >
+                <img src="./images/Icon.png" alt="" class="object-fill" />
+              </div>
+              <div class="flex flex-col md:gap-y-2 lg:gap-y-3 xl:gap-y-2">
+                <h2
+                  class="text-[#014470] text-xl special-font font-normal md:text-xl lg:text-[20px] xl:text-[1.75rem] leading-normal"
+                >
+                  Mutual Respect
+                </h2>
+                <p
+                  class="text-[#26465B] font-normal text-[11px] md:pt-0 pt-[0.2rem] md:text-[12px] lg:text-[13px] xl:text-[0.8775rem] leading-[18px] md:leading-[22.4px] lg:leading-[1.4rem]"
+                >
+                  We foster an environment of empathy, understanding and
+                  collaboration, recognizing the unique value and contributions
+                  of every individual. By promoting a culture of respect, We
+                  create strong relationship with our clients..
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

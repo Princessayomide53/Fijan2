@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section
+      class="bg-gradient-to-r z-[100] fixed py-[2.6rem] lg:py-14 from-[#ffffff] to-[#71C8E4] w-full"
+    >
+      <nav
+        class="mac:max-w-[83rem] absolute top-7 lg:top-8 z-50 left-0 right-0 md:max-w-[45rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[20.5rem] iphone:max-w-[22rem] lg:max-w-[60rem] mx-auto flex justify-between"
+      >
+        <div class="flex justify-items-start items-center gap-2 mt-2">
+          <a href="index.html">
+          <img
+            src="./images/Logo.png"
+            alt="logo"
+            class="h-[2rem] xl:w-[39.301px] lg:w-[35.301px] lg:h-[45px] xl:h-[49px]"
+          />
+          <h2
+            class="text-[#0171BB] md:text-[1.5rem] lg:text-[1.5rem] xl:text-[2rem] mac:text-[2.23rem] font-bold leading-[28.697px]"
+          >
+            FIJAN
+            </a>
+          </h2>
+        </div>
+        <ul
+          class="lg:flex hidden xl:space-x-[1.5rem] lg:space-x-[1.4rem] mac:space-x-[3rem] lg:mt-4 xl:mt-3 mt-2 z-20"
+        >
+          <li class='xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg hover:bg-white transition duration-150 leading-[16px] font-medium rounded-full border-2 border-[#014470] flex justify-center items-center'><a href="index.html" class="nav-button">Home</a></li>
+          <li class='xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center'><a href="about.html" class="nav-button">About</a></li>
+          <li class="dropdown">
+            <button class="xl:px-7 lg:px-4 gap-2 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">
+              Job Seekers <i class="fas fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu hidden">
+              <li><a href="/nurses" class="dropdown-item">Nurses</a></li>
+              <li>
+                <a href="/medicalDoctors" class="dropdown-item"
+                  >Medical Doctors</a
+                >
+              </li>
+              <li>
+                <a href="/careSupport" class="dropdown-item"
+                  >Care Support Worker</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="employers.html" class="xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">Employers</a></li>
+          <li><a href="contact.html" class="xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">Contact Us</a></li>
+        </ul>
+        <ul class="mt-2 hidden lg:flex">
+          <li class="lg:px-5 xl:px-7 py-1 font-semibold flex justify-center items-center rounded-full bg-[#098666] text-white"><a href="#section1">Register Now</a></li>
+        </ul>
+
+        <!-- mobile -->
+        <ul class="flex justify-between lg:hidden">
+          <li class="">
+            <a href="index.html">
+              <!-- <img src="./images/logo.png"  alt="" />c:\Users\user\Desktop\Frontend\Cabana\Cabana\build\images\close.png -->
+            </a>
+          </li>
+
+          <button
+            class="mr-4"
+            id="openMenuButton"
+            class="text-gray-300 mt-3 hover:bg-black hover:text-yellow-500 rounded-full"
+          >
+            <span id="mobile-open" class="mobile-open pt-2">
+              <img src="./images/hamburger.png" width="27" />
+            </span>
+
+            <span id="mobile-close" class="mobile-close mt-2 hidden">
+              <img src="./images/close.png" width="23" />
+            </span>
+          </button>
+        </ul></nav>
+        <div
+          id="mobile-menu-list"
+          class="mobile-menu-list hidden absolute top-0 text-3xl bg-gradient-to-r from-[#ffffff] to-[#71C8E4] w-full z-10 flex items-center origin-start h-[100vh] justify-center center overflow-hidden"
+        >
+        
+          <ul
+            class=" flex flex-col space-y-[3rem] mt-5 p-7 text-[#014470] hover:text-[#098666] uppercase animate-open-menu"
+          >
+          <li class="">
+            <a class="" href="index.html">Home</a>
+          </li>
+            <li class="">
+              <a class="" href="about.html">About</a>
+            </li>
+            <li class="">
+              <a href=".html">Services</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+            <li>
+              <a href="employers.html">Employers</a>
+            </li>
+            <!-- <li>
+              <a href="contact.html"> book now</a>
+            </li> -->
+          </ul>
+        </div>
+      
+      
+    </section>
+    <main>
+      <section
+        class="bg-gradient-to-r from-[#ffffff] to-[#71C8E4] h-[20.5rem] w-full md:h-[18rem] lg:h-[19.5rem] xl:h-[26rem]"
+      >
+        <div
+          class="mac:max-w-[83rem] md:max-w-[45rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[22rem] mx-auto"
+        >
+          <h2
+            class="text-center pt-[7rem] md:pt-[5rem] lg:pt-[7rem] xl:pt-[8.1rem] text-[4rem] md:text-[5.5rem] lg:text-[6.5rem] xl:text-[6.2rem] text-[#014470] font-normal leading-[4rem] lg:leading-[5.2rem] xl:leading-[6.3rem] special-font"
+          >
+            Contact Us
+          </h2>
+          <div
+            class="relative flex flex-col items-center justify-center pt-[2.7rem] md:pt-[3rem] lg:pt-[2rem] xl:pt-[3rem]"
+          >
+            <img
+              src="./images/Contact.png"
+              alt=""
+              class="object-contain hidden md:block w-[20rem] md:w-[42rem] mac:w-[80rem] lg:w-[57rem] mac:h-[30rem] xl:w-[70rem] xl:h-[28rem]"
+            />
+            <img
+              src="./images/Contact2.png"
+              alt=""
+              class="object-contain block md:hidden w-[20rem] md:w-[42rem] mac:w-[80rem] lg:w-[57rem] mac:h-[30rem] xl:w-[70rem] xl:h-[28rem]"
+            />
+          </div>
+        </div>
+      </section>
+      <section
+        class="mac:pt-[26rem] md:pt-[13rem] pt-[10rem] lg:pt-[18rem] xl:pt-[23rem] pb-[5rem] md:pb-[7.8rem] max-w-[20.5rem] iphone:max-w-[21rem] md:max-w-[38rem] lg:max-w-[48rem] xl:max-w-[55rem] mac:max-w-[65rem] mx-auto"
+      >
+        <h5
+          class="text-[#26465B] text-[14px] md:text-[1rem] lg:text-[1.11rem] xl:text-[1.25rem] font-normal md:leading-[20px] lg:leading-[30px] pb-[90px] md:pb-[75px] lg:pb-[108px]"
+        >
+          We’re here to assist you with your recruitment needs. Contact our team
+          today to discuss how we can support
+          <br class="hidden mac:block" />
+          your organisation in finding qualified and compassionate care workers.
+          Call us or email us for your carers <br class="hidden mac:block" />
+          recruitment. We look forward to hearing from you.
+        </h5>
+        <div
+          class="mac:max-w-[73rem] bg-white md:max-w-[38rem] xl:max-w-[65rem] lg:max-w-[53rem] pro:max-w-[52rem] max-w-[20.15rem] iphone:max-w-[22rem] mx-auto"
+        >
+          <h5
+            class="text-[#098666] text-base pb-[12px] md:pb-0 text-center md:text-base lg:text-[1.1rem] xl:text-[1.4rem] font-semibold leading-[1.25rem]"
+          >
+            SEND US A MESSAGE
+          </h5>
+          <h2
+            class="special-font text-center text-[42px] pt-[7px] md:pt-0 leading-[40px] text-[#014470] md:text-3xl lg:text-5xl mac:text-7xl xl:text-6xl font-normal md:leading-tight lg:leading-[3.8rem]"
+          >
+            Quick Contact
+          </h2>
+          <div
+            class="pt-[3.1rem] lg:pt-[5rem] flex flex-col items-center gap-12 md:flex-row md:justify-between"
+          >
+            <form
+              class="mac:space-y-[2.5rem] w-full space-y-[2.2rem] md:space-y-[2.5rem] lg:space-y-[2.7rem]"
+            >
+              <div class="flex flex-col gap-3">
+                <label
+                  htmlFor="name"
+                  class="md:text-base lg:text-[1.125rem] font-medium leading-[32px] text-[#26465B]"
+                >
+                  Name:
+                  <span
+                    class="text-[#984429] font-normal leading-[32px] text-sm italic"
+                  >
+                    (Required)
+                  </span>
+                </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="border-2 border-[#E2E2E2] pl-5 focus:outline-blue-300 w-full h-[70px] bg-white md:h-[4rem] rounded-md"
+                />
+              </div>
+              <div
+                class="flex flex-col flex-grow gap-[2.2rem] md:flex-row w-full md:gap-5 xl:gap-20"
+              >
+                <div class="flex flex-col gap-3 w-full">
+                  <label
+                    htmlFor="phoneNumber"
+                    class="md:text-base hidden md:block lg:text-[1.125rem] font-medium leading-[32px] text-[#26465B]"
+                  >
+                    Phone Number:
+                    <span
+                      class="text-[#984429] font-normal leading-[32px] text-sm italic"
+                    >
+                      (Required)
+                    </span>
+                  </label>
+                  <label
+                    htmlFor="phoneNumber"
+                    class="md:text-base block md:hidden lg:text-[1.125rem] font-medium leading-[32px] text-[#26465B]"
+                  >
+                    Tel:
+                    <span
+                      class="text-[#984429] font-normal leading-[32px] text-sm italic"
+                    >
+                      (Required)
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    class="border-2 border-[#E2E2E2] focus:outline-blue-400 pl-5 w-full h-[70px] bg-white md:h-[4rem] rounded-md"
+                  />
+                </div>
+                <div class="flex flex-col gap-3 w-full">
+                  <label
+                    htmlFor="email"
+                    class="md:text-base lg:text-[1.125rem] font-medium leading-[32px] text-[#26465B]"
+                  >
+                    Email:
+                    <span
+                      class="text-[#984429] font-normal leading-[32px] text-sm italic"
+                    >
+                      (Required)
+                    </span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="border-2 border-[#E2E2E2] focus:outline-blue-300 w-full pl-5 h-[70px] bg-white md:h-[4rem] rounded-md"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 w-full">
+                <label
+                  htmlFor="name"
+                  class="md:text-base lg:text-[1.125rem] font-medium leading-[32px] text-[#26465B]"
+                >
+                  Introduce yourself:
+                  <span
+                    class="text-[#984429] font-normal leading-[32px] text-sm italic"
+                  >
+                    (Required)
+                  </span>
+                </label>
+                <textarea
+                  name="name"
+                  class="border-2 border-[#E2E2E2] pl-5 focus:outline-blue-300 w-full h-[180px] md:h-[12rem]"
+                ></textarea>
+              </div>
+
+              <article
+                class="flex flex-col gap-10 md:gap-0 md:flex-row md:justify-between md:items-center pt-3"
+              >
+                <div class="flex flex-col gap-3">
+                  <p
+                    class="md:text-base lg:text-[1.125rem] font-medium leading-[32px] text-[#26465B]"
+                  >
+                    Add Your CV
+                  </p>
+                  <input
+                    type="file"
+                    class="file:mr-3 file:bg-white file:px-5 file:py-2 file:rounded-lg file:text-[#26465B] file:border-[2px] file:border-[#84C3B3]"
+                  />
+
+                  <p
+                    class="pt-1 text-[11px] leading-normal font-normal text-[#26465B]"
+                  >
+                    Max. file size: 2 MB.
+                  </p>
+                </div>
+
+                <button
+                  type="submit"
+                  class="px-7 h-[45px] rounded-full bg-[#098666] text-white"
+                >
+                  Submit
+                </button>
+              </article>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

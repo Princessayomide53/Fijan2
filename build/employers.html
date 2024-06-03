@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employers</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section
+      class="bg-gradient-to-r z-[100] fixed py-[2.6rem] lg:py-14 from-[#ffffff] to-[#71C8E4] w-full"
+    >
+      <nav
+        class="mac:max-w-[83rem] absolute top-7 lg:top-8 z-50 left-0 right-0 md:max-w-[45rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[20.5rem] iphone:max-w-[22rem] lg:max-w-[60rem] mx-auto flex justify-between"
+      >
+        <div class="flex justify-items-start items-center gap-2 mt-2">
+          <a href="index.html">
+          <img
+            src="./images/Logo.png"
+            alt="logo"
+            class="h-[2rem] xl:w-[39.301px] lg:w-[35.301px] lg:h-[45px] xl:h-[49px]"
+          />
+          <h2
+            class="text-[#0171BB] md:text-[1.5rem] lg:text-[1.5rem] xl:text-[2rem] mac:text-[2.23rem] font-bold leading-[28.697px]"
+          >
+            FIJAN
+            </a>
+          </h2>
+        </div>
+        <ul
+          class="lg:flex hidden xl:space-x-[1.5rem] lg:space-x-[1.4rem] mac:space-x-[3rem] lg:mt-4 xl:mt-3 mt-2 z-20"
+        >
+          <li class='xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg hover:bg-white transition duration-150 leading-[16px] font-medium rounded-full border-2 border-[#014470] flex justify-center items-center'><a href="index.html" class="nav-button">Home</a></li>
+          <li class='xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center'><a href="about.html" class="nav-button">About</a></li>
+          <li class="dropdown">
+            <button class="xl:px-7 lg:px-4 gap-2 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">
+              Job Seekers <i class="fas fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu hidden">
+              <li><a href="/nurses" class="dropdown-item">Nurses</a></li>
+              <li>
+                <a href="/medicalDoctors" class="dropdown-item"
+                  >Medical Doctors</a
+                >
+              </li>
+              <li>
+                <a href="/careSupport" class="dropdown-item"
+                  >Care Support Worker</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="employers.html" class="xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">Employers</a></li>
+          <li><a href="contact.html" class="xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">Contact Us</a></li>
+        </ul>
+        <ul class="mt-2 hidden lg:flex">
+          <li class="lg:px-5 xl:px-7 py-1 font-semibold flex justify-center items-center rounded-full bg-[#098666] text-white"><a href="#section1">Register Now</a></li>
+        </ul>
+
+        <!-- mobile -->
+        <ul class="flex justify-between lg:hidden">
+          <li class="">
+            <a href="index.html">
+              <!-- <img src="./images/logo.png"  alt="" />c:\Users\user\Desktop\Frontend\Cabana\Cabana\build\images\close.png -->
+            </a>
+          </li>
+
+          <button
+            class="mr-4"
+            id="openMenuButton"
+            class="text-gray-300 mt-3 hover:bg-black hover:text-yellow-500 rounded-full"
+          >
+            <span id="mobile-open" class="mobile-open pt-2">
+              <img src="./images/hamburger.png" width="27" />
+            </span>
+
+            <span id="mobile-close" class="mobile-close mt-2 hidden">
+              <img src="./images/close.png" width="23" />
+            </span>
+          </button>
+        </ul></nav>
+        <div
+          id="mobile-menu-list"
+          class="mobile-menu-list hidden absolute top-0 text-3xl bg-gradient-to-r from-[#ffffff] to-[#71C8E4] w-full z-10 flex items-center origin-start h-[100vh] justify-center center overflow-hidden"
+        >
+        
+          <ul
+            class=" flex flex-col space-y-[3rem] mt-5 p-7 text-[#014470] hover:text-[#098666] uppercase animate-open-menu"
+          >
+          <li class="">
+            <a class="" href="index.html">Home</a>
+          </li>
+            <li class="">
+              <a class="" href="about.html">About</a>
+            </li>
+            <li class="">
+              <a href=".html">Services</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+            <li>
+              <a href="employers.html">Employers</a>
+            </li>
+            <!-- <li>
+              <a href="contact.html"> book now</a>
+            </li> -->
+          </ul>
+        </div>
+      
+      
+    </section>
+    <main>
+    <section
+      class="bg-gradient-to-r from-[#ffffff] to-[#71C8E4] w-full h-[21.5rem] md:h-[20rem] lg:h-[25.5rem] xl:h-[28rem] mb[5rem] md:mb-[9rem] lg:mb-[9rem] xl:mb-[10rem] mac:mb-[15rem]"
+    >
+      <div
+        class="mac:max-w-[83rem] md:max-w-[45rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[22rem] mx-auto"
+      >
+        <p
+          class="text-[#098666] pb-[12px] md:pb-0 pt-[9rem] md:pt-[1.2rem] md:hidden lg:pt-[1rem] text-center text-[1rem] md:text-[1.5rem] lg:text-[2rem] font-normal leading-[20px]"
+        >
+          Nursing and Healthcare Hot jobs
+        </p>
+        <h2
+          class="text-center md:pt-[5rem] lg:pt-[7rem] xl:pt-[8.1rem] text-[42px] md:text-[5.5rem] lg:text-[6.5rem] xl:text-[6.2rem] text-[#014470] font-normal leading-[42px] md:leading-[4rem] lg:leading-[5.8rem] xl:leading-[6.3rem] special-font"
+        >
+          Employers
+        </h2>
+        <p
+          class="text-[#014470] hidden md:block md:pt-[1.2rem] lg:pt-[1rem] text-center pt-[0.7rem] text-[1rem] md:text-[1.5rem] lg:text-[2rem] font-normal leading-normal"
+        >
+          Nursing and Healthcare Hot jobs
+        </p>
+        <div
+          class="relative flex flex-col items-center justify-center pt-[2.7rem] md:pt-[3rem] lg:pt-[2rem] xl:pt-[2rem]"
+        >
+          <img
+            src="./images/employers.png"
+            alt=""
+            class="object-contain w-[20rem] hidden md:block md:w-[42rem] mac:w-[80rem] lg:w-[55rem] mac:h-[30rem] xl:w-[70rem] xl:h-[28rem]"
+          />
+          <img
+            src="./images/employer.png"
+            alt=""
+            class="object-contain w-[20rem] md:hidden md:w-[42rem] mac:w-[80rem] lg:w-[55rem] mac:h-[30rem] xl:w-[70rem] xl:h-[28rem]"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- services -->
+    <section
+      class="mac:max-w-[80rem] md:max-w-[45rem] lg:max-w-[57rem] xl:max-w-[73rem] pro:max-w-[52rem] max-w-[20.5rem] iphone:max-w-[22rem] mx-auto pt-[9.5rem] md:pt-[3rem] lg:pt-[5rem] xl:pt-[11rem] mac:pt-[9rem]"
+    >
+      <p
+        class="pt-[1rem] md:pt-[2.2rem] text-[14px] leading-[28px] md:text-[12px] max-w-[20.5rem] md:max-w-[35rem] lg:max-w-[45rem] xl:max-w-[60rem] mac:max-w-[70rem] mx-auto flex flex-wrap text-[#26465B] lg:text-sm xl:text-base mac:text-lg font-normal md:leading-normal lg:leading-[30px]"
+      >
+        As a recruitment agency for care workers, we understand the unique
+        challenges and requirements that employers in the healthcare
+        <br class="hidden mac:block" />
+        industry face. We are dedicated to providing comprehensive and tailored
+        solutions to meet your staffing needs.
+        <br class="hidden mac:block" />
+        With our expertise and extensive network, we can assist you in finding
+        qualified and compassionate care workers who align with
+        <br class="hidden mac:block" />
+        your organisation’s values and goals. Our range of services is designed
+        to streamline the recruitment process, saving you time and
+        <br class="hidden mac:block" />
+        resources while ensuring the highest standard of care for your clients.
+      </p>
+      <h1
+        class="text-center special-font pt-[64px] md:pt-[50px] xl:pt-[75px] mac:px-0 text-3xl md:text-4xl leading-normal lg:leading-[3.85rem] font-normal lg:text-5xl xl:text-7xl mac:text-[3.5rem] text-[#014470]"
+      >
+        Our Services
+      </h1>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 md:pb-[1rem] lg:pb-[2.5rem] lg:grid-cols-2 xl:grid-cols-3 gap-y-[50px] md:gap-y-[55px] lg:gap-y-[83px] gap-x-[20px] pt-[30px] pb-[50px] md:pt-[46px] hover:bg-white"
+      >
+        <div
+          class="w-[320px] iphone:w-[340px] mx-auto md:w-[340px] md:h-[622px] lg:w-[413px] xl:w-[380px] mac:w-[413px] lg:h-[662px] bg-[#E1F8FF] py-[32px] px-[18px] md:px-[25px] transition-colors duration-300 ease-in-out hover:bg-white hover:shadow-md hover:shadow-[#00000026]"
+        >
+          <div
+            class="bg-white w-12 h-12 flex justify-center items-center rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="38"
+              height="38"
+              viewBox="0 0 38 38"
+              fill="none"
+            >
+              <path
+                d="M34.0443 19C34.0443 27.7446 27.7471 34.0417 19.0026 34.0417C10.2581 34.0417 3.96094 27.7446 3.96094 19C3.96094 10.2555 10.2581 3.95837 19.0026 3.95837C27.7471 3.95837 34.0443 10.2555 34.0443 19Z"
+                stroke="#02BCF7"
+                stroke-width="1.58333"
+              />
+              <path
+                d="M16.1845 12.3051C16.0339 12.6689 16.0339 13.1299 16.0339 14.0521V15.9363C16.0339 15.9811 16.0339 16.0035 16.0199 16.0174C16.006 16.0313 15.9836 16.0313 15.9389 16.0313H14.0547C13.1325 16.0313 12.6714 16.0313 12.3077 16.1819C11.8228 16.3828 11.4375 16.7681 11.2366 17.2531C11.0859 17.6168 11.0859 18.0779 11.0859 19C11.0859 19.9222 11.0859 20.3833 11.2366 20.747C11.4375 21.232 11.8228 21.6173 12.3077 21.8181C12.6714 21.9688 13.1325 21.9688 14.0547 21.9688H15.9389C15.9836 21.9688 16.006 21.9688 16.0199 21.9827C16.0339 21.9966 16.0339 22.019 16.0339 22.0638V23.948C16.0339 24.8701 16.0339 25.3312 16.1845 25.6949C16.3854 26.1799 16.7707 26.5652 17.2556 26.7661C17.6193 26.9167 18.0804 26.9167 19.0026 26.9167C19.9248 26.9167 20.3859 26.9167 20.7496 26.7661C21.2345 26.5652 21.6198 26.1799 21.8207 25.6949C21.9714 25.3312 21.9714 24.8701 21.9714 23.948V22.0638C21.9714 22.019 21.9714 21.9966 21.9853 21.9827C21.9992 21.9688 22.0216 21.9688 22.0664 21.9688H23.9505C24.8727 21.9688 25.3338 21.9688 25.6975 21.8181C26.1824 21.6173 26.5677 21.232 26.7686 20.747C26.9193 20.3833 26.9193 19.9222 26.9193 19C26.9193 18.0779 26.9193 17.6168 26.7686 17.2531C26.5677 16.7681 26.1825 16.3828 25.6975 16.1819C25.3338 16.0313 24.8727 16.0313 23.9505 16.0313H22.0664C22.0216 16.0313 21.9992 16.0313 21.9853 16.0174C21.9714 16.0035 21.9714 15.9811 21.9714 15.9363V14.0521C21.9714 13.1299 21.9714 12.6689 21.8207 12.3051C21.6198 11.8202 21.2345 11.4349 20.7496 11.234C20.3859 11.0834 19.9248 11.0834 19.0026 11.0834C18.0804 11.0834 17.6193 11.0834 17.2556 11.234C16.7707 11.4349 16.3854 11.8202 16.1845 12.3051Z"
+                stroke="#098666"
+                stroke-width="1.58333"
+              />
+            </svg>
+          </div>
+
+          <h3
+            class="pt-[15px] special-font text-[#014470] text-[23px] md:text-[20px] lg:text-[28px] xl:text-[24px] mac:text-[28px] font-normal leading-normal"
+          >
+            Candidate Attraction
+          </h3>
+          <p
+            class="pt-[18px] font-normal leading-[26px] text-[14px] md:text-[13px] lg:text-base text-[#26465B]"
+          >
+            Finding suitable candidates for your care worker positions is
+            essential for maintaining the quality of care within your
+            organisation. Our candidate attraction services utilise various
+            channels and strategies to reach a diverse pool of qualified
+            professionals.We employ targeted advertising campaigns,
+            industry-specific job boards, social media platforms, and our
+            extensive network to attract talent.By understanding your specific
+            requirements and organisational culture, we can create compelling
+            job descriptions and market your opportunities effectively to
+            potential candidates.
+          </p>
+        </div>
+
+        <!-- 2 -->
+        <div
+          class="w-[320px] iphone:w-[340px] mx-auto md:w-[340px] md:h-[622px] lg:w-[413px] xl:w-[380px] mac:w-[413px] lg:h-[662px] bg-[#E1F8FF] py-[32px] px-[18px] md:px-[25px] transition-colors duration-300 ease-in-out hover:bg-white hover:shadow-md hover:shadow-[#00000026]"
+        >
+          <div
+            class="bg-white w-12 h-12 flex justify-center items-center rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="38"
+              height="38"
+              viewBox="0 0 38 38"
+              fill="none"
+            >
+              <path
+                d="M34.0443 19C34.0443 27.7446 27.7471 34.0417 19.0026 34.0417C10.2581 34.0417 3.96094 27.7446 3.96094 19C3.96094 10.2555 10.2581 3.95837 19.0026 3.95837C27.7471 3.95837 34.0443 10.2555 34.0443 19Z"
+                stroke="#02BCF7"
+                stroke-width="1.58333"
+              />
+              <path
+                d="M16.1845 12.3051C16.0339 12.6689 16.0339 13.1299 16.0339 14.0521V15.9363C16.0339 15.9811 16.0339 16.0035 16.0199 16.0174C16.006 16.0313 15.9836 16.0313 15.9389 16.0313H14.0547C13.1325 16.0313 12.6714 16.0313 12.3077 16.1819C11.8228 16.3828 11.4375 16.7681 11.2366 17.2531C11.0859 17.6168 11.0859 18.0779 11.0859 19C11.0859 19.9222 11.0859 20.3833 11.2366 20.747C11.4375 21.232 11.8228 21.6173 12.3077 21.8181C12.6714 21.9688 13.1325 21.9688 14.0547 21.9688H15.9389C15.9836 21.9688 16.006 21.9688 16.0199 21.9827C16.0339 21.9966 16.0339 22.019 16.0339 22.0638V23.948C16.0339 24.8701 16.0339 25.3312 16.1845 25.6949C16.3854 26.1799 16.7707 26.5652 17.2556 26.7661C17.6193 26.9167 18.0804 26.9167 19.0026 26.9167C19.9248 26.9167 20.3859 26.9167 20.7496 26.7661C21.2345 26.5652 21.6198 26.1799 21.8207 25.6949C21.9714 25.3312 21.9714 24.8701 21.9714 23.948V22.0638C21.9714 22.019 21.9714 21.9966 21.9853 21.9827C21.9992 21.9688 22.0216 21.9688 22.0664 21.9688H23.9505C24.8727 21.9688 25.3338 21.9688 25.6975 21.8181C26.1824 21.6173 26.5677 21.232 26.7686 20.747C26.9193 20.3833 26.9193 19.9222 26.9193 19C26.9193 18.0779 26.9193 17.6168 26.7686 17.2531C26.5677 16.7681 26.1825 16.3828 25.6975 16.1819C25.3338 16.0313 24.8727 16.0313 23.9505 16.0313H22.0664C22.0216 16.0313 21.9992 16.0313 21.9853 16.0174C21.9714 16.0035 21.9714 15.9811 21.9714 15.9363V14.0521C21.9714 13.1299 21.9714 12.6689 21.8207 12.3051C21.6198 11.8202 21.2345 11.4349 20.7496 11.234C20.3859 11.0834 19.9248 11.0834 19.0026 11.0834C18.0804 11.0834 17.6193 11.0834 17.2556 11.234C16.7707 11.4349 16.3854 11.8202 16.1845 12.3051Z"
+                stroke="#098666"
+                stroke-width="1.58333"
+              />
+            </svg>
+          </div>
+
+          <h3
+            class="pt-[15px] special-font text-[#014470] text-[23px] md:text-[20px] lg:text-[28px] xl:text-[24px] mac:text-[28px] font-normal leading-normal"
+          >
+            Campaign Management
+          </h3>
+          <p
+            class="pt-[18px] font-normal leading-[26px] text-[14px] md:text-[13px] lg:text-base text-[#26465B]"
+          >
+            Managing a recruitment campaign can be a time-consuming and complex
+            task. As your care worker agency, we take care of the entire
+            campaign management process for you.From designing and implementing
+            recruitment strategies to monitoring and evaluating campaign
+            performance, we ensure that your recruitment efforts are efficient
+            and effective. Our team of experienced recruiters will handle all
+            aspects of the campaign, including screening applications,
+            conducting interviews, and managing communication with candidates.By
+            leveraging our expertise, you can focus on other critical aspects of
+            your organisation, confident that your recruitment campaign is in
+            capable hands.
+          </p>
+        </div>
+        <!-- 3 -->
+        <div
+          class="w-[320px] iphone:w-[340px] mx-auto md:w-[340px] md:h-[622px] lg:w-[413px] xl:w-[380px] mac:w-[413px] lg:h-[662px] bg-[#E1F8FF] py-[32px] px-[18px] md:px-[25px] transition-colors duration-300 ease-in-out hover:bg-white hover:shadow-md hover:shadow-[#00000026]"
+        >
+          <div
+            class="bg-white w-12 h-12 flex justify-center items-center rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="38"
+              height="38"
+              viewBox="0 0 38 38"
+              fill="none"
+            >
+              <path
+                d="M34.0443 19C34.0443 27.7446 27.7471 34.0417 19.0026 34.0417C10.2581 34.0417 3.96094 27.7446 3.96094 19C3.96094 10.2555 10.2581 3.95837 19.0026 3.95837C27.7471 3.95837 34.0443 10.2555 34.0443 19Z"
+                stroke="#02BCF7"
+                stroke-width="1.58333"
+              />
+              <path
+                d="M16.1845 12.3051C16.0339 12.6689 16.0339 13.1299 16.0339 14.0521V15.9363C16.0339 15.9811 16.0339 16.0035 16.0199 16.0174C16.006 16.0313 15.9836 16.0313 15.9389 16.0313H14.0547C13.1325 16.0313 12.6714 16.0313 12.3077 16.1819C11.8228 16.3828 11.4375 16.7681 11.2366 17.2531C11.0859 17.6168 11.0859 18.0779 11.0859 19C11.0859 19.9222 11.0859 20.3833 11.2366 20.747C11.4375 21.232 11.8228 21.6173 12.3077 21.8181C12.6714 21.9688 13.1325 21.9688 14.0547 21.9688H15.9389C15.9836 21.9688 16.006 21.9688 16.0199 21.9827C16.0339 21.9966 16.0339 22.019 16.0339 22.0638V23.948C16.0339 24.8701 16.0339 25.3312 16.1845 25.6949C16.3854 26.1799 16.7707 26.5652 17.2556 26.7661C17.6193 26.9167 18.0804 26.9167 19.0026 26.9167C19.9248 26.9167 20.3859 26.9167 20.7496 26.7661C21.2345 26.5652 21.6198 26.1799 21.8207 25.6949C21.9714 25.3312 21.9714 24.8701 21.9714 23.948V22.0638C21.9714 22.019 21.9714 21.9966 21.9853 21.9827C21.9992 21.9688 22.0216 21.9688 22.0664 21.9688H23.9505C24.8727 21.9688 25.3338 21.9688 25.6975 21.8181C26.1824 21.6173 26.5677 21.232 26.7686 20.747C26.9193 20.3833 26.9193 19.9222 26.9193 19C26.9193 18.0779 26.9193 17.6168 26.7686 17.2531C26.5677 16.7681 26.1825 16.3828 25.6975 16.1819C25.3338 16.0313 24.8727 16.0313 23.9505 16.0313H22.0664C22.0216 16.0313 21.9992 16.0313 21.9853 16.0174C21.9714 16.0035 21.9714 15.9811 21.9714 15.9363V14.0521C21.9714 13.1299 21.9714 12.6689 21.8207 12.3051C21.6198 11.8202 21.2345 11.4349 20.7496 11.234C20.3859 11.0834 19.9248 11.0834 19.0026 11.0834C18.0804 11.0834 17.6193 11.0834 17.2556 11.234C16.7707 11.4349 16.3854 11.8202 16.1845 12.3051Z"
+                stroke="#098666"
+                stroke-width="1.58333"
+              />
+            </svg>
+          </div>
+
+          <h3
+            class="pt-[15px] special-font text-[#014470] text-[23px] md:text-[20px] lg:text-[28px] xl:text-[24px] mac:text-[28px] font-normal leading-normal"
+          >
+            Contract and Temporary Placement
+          </h3>
+          <p
+            class="pt-[18px] font-normal leading-[26px] text-[14px] md:text-[13px] lg:text-base text-[#26465B]"
+          >
+            Flexibility is crucial in the healthcare industry, where demand can
+            fluctuate. Our contract and temporary placement services allow you
+            to quickly and easily fill short-term staffing gaps.Whether you
+            require temporary cover for sick leave, vacation periods, or
+            increased workload, we have a pool of skilled and qualified care
+            workers ready to step in. Our home care recruitment agency UK
+            handles all the necessary paperwork, payroll, and compliance to
+            ensure a smooth transition for your organisation and the temporary
+            care worker.By partnering with us for contract and temporary
+            placements, you can maintain continuity of care without compromising
+            quality.
+          </p>
+        </div>
+        <!-- 4 -->
+        <div
+          class="w-[320px] iphone:w-[340px] mx-auto md:w-[340px] md:h-[622px] lg:w-[413px] xl:w-[380px] mac:w-[413px] lg:h-[662px] bg-[#E1F8FF] py-[32px] px-[18px] md:px-[25px] transition-colors duration-300 ease-in-out hover:bg-white hover:shadow-md hover:shadow-[#00000026]"
+        >
+          <div
+            class="bg-white w-12 h-12 flex justify-center items-center rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="38"
+              height="38"
+              viewBox="0 0 38 38"
+              fill="none"
+            >
+              <path
+                d="M34.0443 19C34.0443 27.7446 27.7471 34.0417 19.0026 34.0417C10.2581 34.0417 3.96094 27.7446 3.96094 19C3.96094 10.2555 10.2581 3.95837 19.0026 3.95837C27.7471 3.95837 34.0443 10.2555 34.0443 19Z"
+                stroke="#02BCF7"
+                stroke-width="1.58333"
+              />
+              <path
+                d="M16.1845 12.3051C16.0339 12.6689 16.0339 13.1299 16.0339 14.0521V15.9363C16.0339 15.9811 16.0339 16.0035 16.0199 16.0174C16.006 16.0313 15.9836 16.0313 15.9389 16.0313H14.0547C13.1325 16.0313 12.6714 16.0313 12.3077 16.1819C11.8228 16.3828 11.4375 16.7681 11.2366 17.2531C11.0859 17.6168 11.0859 18.0779 11.0859 19C11.0859 19.9222 11.0859 20.3833 11.2366 20.747C11.4375 21.232 11.8228 21.6173 12.3077 21.8181C12.6714 21.9688 13.1325 21.9688 14.0547 21.9688H15.9389C15.9836 21.9688 16.006 21.9688 16.0199 21.9827C16.0339 21.9966 16.0339 22.019 16.0339 22.0638V23.948C16.0339 24.8701 16.0339 25.3312 16.1845 25.6949C16.3854 26.1799 16.7707 26.5652 17.2556 26.7661C17.6193 26.9167 18.0804 26.9167 19.0026 26.9167C19.9248 26.9167 20.3859 26.9167 20.7496 26.7661C21.2345 26.5652 21.6198 26.1799 21.8207 25.6949C21.9714 25.3312 21.9714 24.8701 21.9714 23.948V22.0638C21.9714 22.019 21.9714 21.9966 21.9853 21.9827C21.9992 21.9688 22.0216 21.9688 22.0664 21.9688H23.9505C24.8727 21.9688 25.3338 21.9688 25.6975 21.8181C26.1824 21.6173 26.5677 21.232 26.7686 20.747C26.9193 20.3833 26.9193 19.9222 26.9193 19C26.9193 18.0779 26.9193 17.6168 26.7686 17.2531C26.5677 16.7681 26.1825 16.3828 25.6975 16.1819C25.3338 16.0313 24.8727 16.0313 23.9505 16.0313H22.0664C22.0216 16.0313 21.9992 16.0313 21.9853 16.0174C21.9714 16.0035 21.9714 15.9811 21.9714 15.9363V14.0521C21.9714 13.1299 21.9714 12.6689 21.8207 12.3051C21.6198 11.8202 21.2345 11.4349 20.7496 11.234C20.3859 11.0834 19.9248 11.0834 19.0026 11.0834C18.0804 11.0834 17.6193 11.0834 17.2556 11.234C16.7707 11.4349 16.3854 11.8202 16.1845 12.3051Z"
+                stroke="#098666"
+                stroke-width="1.58333"
+              />
+            </svg>
+          </div>
+
+          <h3
+            class="pt-[15px] special-font text-[#014470] text-[23px] md:text-[20px] lg:text-[28px] xl:text-[24px] mac:text-[28px] font-normal leading-normal"
+          >
+            Permanent Search and Selection
+          </h3>
+          <p
+            class="pt-[18px] font-normal leading-[26px] text-[14px] md:text-[13px] lg:text-base text-[#26465B]"
+          >
+            When looking to invest long-term in your care workforce, our endless
+            search and selection services are designed to find the perfect fit.
+            We work closely with you to understand your organisation’s culture,
+            values, and specific requirements for each position.Our dedicated
+            team of recruiters conducts thorough candidate assessments,
+            including interviews, reference checks, and background screenings.
+            We present you with a shortlist of highly qualified candidates who
+            not only possess the necessary skills and experience but also align
+            with your organisation’s mission and values.By partnering with us
+            for permanent search and selection, you can make informed hiring
+            decisions and build a solid and dedicated care team.
+          </p>
+        </div>
+        <!-- 5 -->
+        <div
+          class="w-[320px] iphone:w-[340px] mx-auto md:w-[340px] md:h-[622px] lg:w-[413px] xl:w-[380px] mac:w-[413px] lg:h-[662px] bg-[#E1F8FF] py-[32px] px-[18px] md:px-[25px] transition-colors duration-300 ease-in-out hover:bg-white hover:shadow-md hover:shadow-[#00000026]"
+        >
+          <div
+            class="bg-white w-12 h-12 flex justify-center items-center rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="38"
+              height="38"
+              viewBox="0 0 38 38"
+              fill="none"
+            >
+              <path
+                d="M34.0443 19C34.0443 27.7446 27.7471 34.0417 19.0026 34.0417C10.2581 34.0417 3.96094 27.7446 3.96094 19C3.96094 10.2555 10.2581 3.95837 19.0026 3.95837C27.7471 3.95837 34.0443 10.2555 34.0443 19Z"
+                stroke="#02BCF7"
+                stroke-width="1.58333"
+              />
+              <path
+                d="M16.1845 12.3051C16.0339 12.6689 16.0339 13.1299 16.0339 14.0521V15.9363C16.0339 15.9811 16.0339 16.0035 16.0199 16.0174C16.006 16.0313 15.9836 16.0313 15.9389 16.0313H14.0547C13.1325 16.0313 12.6714 16.0313 12.3077 16.1819C11.8228 16.3828 11.4375 16.7681 11.2366 17.2531C11.0859 17.6168 11.0859 18.0779 11.0859 19C11.0859 19.9222 11.0859 20.3833 11.2366 20.747C11.4375 21.232 11.8228 21.6173 12.3077 21.8181C12.6714 21.9688 13.1325 21.9688 14.0547 21.9688H15.9389C15.9836 21.9688 16.006 21.9688 16.0199 21.9827C16.0339 21.9966 16.0339 22.019 16.0339 22.0638V23.948C16.0339 24.8701 16.0339 25.3312 16.1845 25.6949C16.3854 26.1799 16.7707 26.5652 17.2556 26.7661C17.6193 26.9167 18.0804 26.9167 19.0026 26.9167C19.9248 26.9167 20.3859 26.9167 20.7496 26.7661C21.2345 26.5652 21.6198 26.1799 21.8207 25.6949C21.9714 25.3312 21.9714 24.8701 21.9714 23.948V22.0638C21.9714 22.019 21.9714 21.9966 21.9853 21.9827C21.9992 21.9688 22.0216 21.9688 22.0664 21.9688H23.9505C24.8727 21.9688 25.3338 21.9688 25.6975 21.8181C26.1824 21.6173 26.5677 21.232 26.7686 20.747C26.9193 20.3833 26.9193 19.9222 26.9193 19C26.9193 18.0779 26.9193 17.6168 26.7686 17.2531C26.5677 16.7681 26.1825 16.3828 25.6975 16.1819C25.3338 16.0313 24.8727 16.0313 23.9505 16.0313H22.0664C22.0216 16.0313 21.9992 16.0313 21.9853 16.0174C21.9714 16.0035 21.9714 15.9811 21.9714 15.9363V14.0521C21.9714 13.1299 21.9714 12.6689 21.8207 12.3051C21.6198 11.8202 21.2345 11.4349 20.7496 11.234C20.3859 11.0834 19.9248 11.0834 19.0026 11.0834C18.0804 11.0834 17.6193 11.0834 17.2556 11.234C16.7707 11.4349 16.3854 11.8202 16.1845 12.3051Z"
+                stroke="#098666"
+                stroke-width="1.58333"
+              />
+            </svg>
+          </div>
+
+          <h3
+            class="pt-[15px] special-font text-[#014470] text-[23px] md:text-[20px] lg:text-[28px] xl:text-[24px] mac:text-[28px] font-normal leading-normal"
+          >
+            Executive Headhunting
+          </h3>
+          <p
+            class="pt-[18px] font-normal leading-[26px] text-[14px] md:text-[13px] lg:text-base text-[#26465B]"
+          >
+            For senior-level positions within your care organisation, we offer
+            executive headhunting services. We understand the unique skills and
+            experience required for leadership roles in the healthcare
+            industry.Our executive recruiters leverage their industry knowledge
+            and extensive network to identify and approach top-level talent with
+            the expertise and leadership qualities to drive your organisation
+            forward. Through a rigorous selection process, we ensure that the
+            candidates we present to you are highly skilled, experienced, and
+            well-suited to the demands of executive roles.Partnering with us for
+            executive headhunting enables you to secure top-tier talent and
+            strengthen your organisation’s leadership team.
+          </p>
+        </div>
+        <!-- 6 -->
+        <div
+          class="w-[320px] iphone:w-[340px] mx-auto md:w-[340px] md:h-[622px] lg:w-[413px] xl:w-[380px] mac:w-[413px] lg:h-[662px] bg-[#E1F8FF] py-[32px] px-[18px] md:px-[25px] transition-colors duration-300 ease-in-out hover:bg-white hover:shadow-md hover:shadow-[#00000026]"
+        >
+          <div
+            class="bg-white w-12 h-12 flex justify-center items-center rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="38"
+              height="38"
+              viewBox="0 0 38 38"
+              fill="none"
+            >
+              <path
+                d="M34.0443 19C34.0443 27.7446 27.7471 34.0417 19.0026 34.0417C10.2581 34.0417 3.96094 27.7446 3.96094 19C3.96094 10.2555 10.2581 3.95837 19.0026 3.95837C27.7471 3.95837 34.0443 10.2555 34.0443 19Z"
+                stroke="#02BCF7"
+                stroke-width="1.58333"
+              />
+              <path
+                d="M16.1845 12.3051C16.0339 12.6689 16.0339 13.1299 16.0339 14.0521V15.9363C16.0339 15.9811 16.0339 16.0035 16.0199 16.0174C16.006 16.0313 15.9836 16.0313 15.9389 16.0313H14.0547C13.1325 16.0313 12.6714 16.0313 12.3077 16.1819C11.8228 16.3828 11.4375 16.7681 11.2366 17.2531C11.0859 17.6168 11.0859 18.0779 11.0859 19C11.0859 19.9222 11.0859 20.3833 11.2366 20.747C11.4375 21.232 11.8228 21.6173 12.3077 21.8181C12.6714 21.9688 13.1325 21.9688 14.0547 21.9688H15.9389C15.9836 21.9688 16.006 21.9688 16.0199 21.9827C16.0339 21.9966 16.0339 22.019 16.0339 22.0638V23.948C16.0339 24.8701 16.0339 25.3312 16.1845 25.6949C16.3854 26.1799 16.7707 26.5652 17.2556 26.7661C17.6193 26.9167 18.0804 26.9167 19.0026 26.9167C19.9248 26.9167 20.3859 26.9167 20.7496 26.7661C21.2345 26.5652 21.6198 26.1799 21.8207 25.6949C21.9714 25.3312 21.9714 24.8701 21.9714 23.948V22.0638C21.9714 22.019 21.9714 21.9966 21.9853 21.9827C21.9992 21.9688 22.0216 21.9688 22.0664 21.9688H23.9505C24.8727 21.9688 25.3338 21.9688 25.6975 21.8181C26.1824 21.6173 26.5677 21.232 26.7686 20.747C26.9193 20.3833 26.9193 19.9222 26.9193 19C26.9193 18.0779 26.9193 17.6168 26.7686 17.2531C26.5677 16.7681 26.1825 16.3828 25.6975 16.1819C25.3338 16.0313 24.8727 16.0313 23.9505 16.0313H22.0664C22.0216 16.0313 21.9992 16.0313 21.9853 16.0174C21.9714 16.0035 21.9714 15.9811 21.9714 15.9363V14.0521C21.9714 13.1299 21.9714 12.6689 21.8207 12.3051C21.6198 11.8202 21.2345 11.4349 20.7496 11.234C20.3859 11.0834 19.9248 11.0834 19.0026 11.0834C18.0804 11.0834 17.6193 11.0834 17.2556 11.234C16.7707 11.4349 16.3854 11.8202 16.1845 12.3051Z"
+                stroke="#098666"
+                stroke-width="1.58333"
+              />
+            </svg>
+          </div>
+
+          <h3
+            class="pt-[15px] special-font text-[#014470] text-[23px] md:text-[20px] lg:text-[28px] xl:text-[24px] mac:text-[28px] font-normal leading-normal"
+          >
+            Recruitment Process Outsourcing (RPO)
+          </h3>
+          <p
+            class="pt-[18px] font-normal leading-[26px] text-[14px] md:text-[13px] lg:text-base text-[#26465B]"
+          >
+            Managing the entire recruitment process can be a daunting task for
+            any organisation. Our recruitment process outsourcing (RPO) services
+            provide a comprehensive solution for all your recruitment needs.We
+            become an extension of your HR department, managing everything from
+            candidate sourcing and screening to interview coordination, offer
+            management, and onboarding. By outsourcing your recruitment process
+            to us, you can reduce administrative burden, improve efficiency, and
+            ensure a consistent and streamlined approach to hiring across your
+            organisation.As one of the best recruitment agencies for care
+            assistants, we provide fully customisable RPO services, allowing you
+            to retain control while benefiting from our expertise and resources.
+          </p>
+        </div>
+      </div>
+    </section></main>
+  </body>
+</html>
