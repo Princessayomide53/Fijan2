@@ -140,3 +140,5 @@ navLinks2.forEach((link) => {
     link.classList.add('actives');
   }
 });
+
+
