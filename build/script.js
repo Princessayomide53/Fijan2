@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
 
-  hamburger.addEventListener('click', () => {
-    mobileMenu.style.display =
-      mobileMenu.style.display === 'block' ? 'none' : 'block';
-  });
+  // hamburger.addEventListener('click', () => {
+  //   mobileMenu.style.display =
+  //     mobileMenu.style.display === 'block' ? 'none' : 'block';
+  // });
 
   const dropdowns = document.querySelectorAll('.dropdown');
   dropdowns.forEach((dropdown) => {
@@ -113,4 +113,46 @@ document.addEventListener('DOMContentLoaded', function () {
 
   navOpen.addEventListener('click', openNav);
   navClose.addEventListener('click', closeNav);
+});
+
+// nav-links
+// document.addEventListener('DOMContentLoaded', function () {
+//   const currentPath = window.location.pathname.split('/').pop();
+//   const navLinks = document.querySelectorAll('ul li a');
+
+//   navLinks.forEach((link) => {
+//     const linkPath = link.getAttribute('href').split('/').pop();
+//     if (linkPath === currentPath) {
+//       link.classList.add('active');
+//     }
+//   });
+// });
+// document.addEventListener('DOMContentLoaded', function () {
+//   const currentPath = window.location.pathname.split('/').pop();
+//   console.log('Current Path:', currentPath); // Debugging line
+
+//   const navLinks = document.querySelectorAll('ul li a');
+
+//   navLinks.forEach((link) => {
+//     const linkPath = link.getAttribute('href').split('/').pop();
+//     console.log('Link Path:', linkPath); // Debugging line
+//     if (
+//       linkPath === currentPath ||
+//       (linkPath === '' && currentPath === 'index.html')
+//     ) {
+//       link.classList.add('active');
+//       console.log('Active link:', link); // Debugging line
+//     }
+//   });
+// });
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach((link) => {
+  const currentHref = window.location.href; // Get the current URL
+
+  // Check if the current URL matches the link's href
+  if (currentHref.endsWith(link.href)) {
+    console.log(link.href);
+    link.classList.add('active');
+  }
 });

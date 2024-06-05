@@ -40,3 +40,19 @@ body {
 .dropdown-content.show {
   display: block;
 }
+
+/* ul li a.active {
+  background-color: white !important;
+  /* border: 2px solid #014470; */
+/* color: #014470; */
+/* } */
+.nav-link.active {
+  background-color: white !important;
+  color: #014470;
+  border-color: #098666 !important; /* Remove border for active link */
+}
+
+a:visited {
+  background-color: inherit; /* Inherit background color from parent */
+  color: #014470;
+}
