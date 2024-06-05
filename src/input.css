@@ -52,7 +52,9 @@ body {
   border-color: #098666 !important; /* Remove border for active link */
 }
 
-a:visited {
-  background-color: inherit; /* Inherit background color from parent */
+/* .nav-link2 {
   color: #014470;
+} */
+.mobile-link.actives {
+  color: #098666 !important;
 }
