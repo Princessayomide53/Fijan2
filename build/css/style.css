@@ -2383,6 +2383,10 @@ body {
     width: 600px;
   }
 
+  .md\:w-\[443px\] {
+    width: 443px;
+  }
+
   .md\:max-w-\[35rem\] {
     max-width: 35rem;
   }
