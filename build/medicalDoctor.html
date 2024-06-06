@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Doctors</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section
+      class="bg-gradient-to-r z-[100] fixed py-[2.6rem] lg:py-14 from-[#ffffff] to-[#71C8E4] w-full"
+    >
+      <nav
+        class="mac:max-w-[83rem] absolute top-7 lg:top-8 z-50 left-0 right-0 md:max-w-[45rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[20.5rem] iphone:max-w-[22rem] lg:max-w-[60rem] mx-auto flex justify-between"
+      >
+        <div class="flex justify-items-start items-center gap-2 mt-2">
+          <a href="index.html">
+          <img
+            src="./images/Logo.png"
+            alt="logo"
+            class="h-[2rem] xl:w-[39.301px] lg:w-[35.301px] lg:h-[45px] xl:h-[49px]"
+          />
+          <h2
+            class="text-[#0171BB] md:text-[1.5rem] lg:text-[1.5rem] xl:text-[2rem] mac:text-[2.23rem] font-bold leading-[28.697px]"
+          >
+            FIJAN
+            </a>
+          </h2>
+        </div>
+        <ul
+          class="lg:flex hidden xl:space-x-[1.5rem] lg:space-x-[1.4rem] mac:space-x-[3rem] lg:mt-4 xl:mt-3 mt-2 z-20"
+        >
+          <li class=''><a href="./index.html" class="nav-link xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg hover:bg-white transition duration-150 leading-[16px] font-medium rounded-full  border-2 border-[#014470] flex justify-center items-center ">Home</a></li>
+          <li class=''><a href="./about.html" class="nav-link xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">About</a></li>
+          <li class="dropdown ">
+            <button class=" navlink xl:px-7 lg:px-4 gap-2 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">
+              Job Seekers <i class="fas fa-caret-down"></i>
+            </button>
+            <div class='dropdown-menu hidden drops absolute top-14 lg:left-[21rem] xl:left-[28.4rem] mac:left-[33rem] w-[195px] h-[108px] mt-2 bg-white shadow-lg rounded-md'>
+            <ul class="space-y-[6px]">
+              <li class='pl-5 pt-2 text-[#014470] hover:bg-[#098666] hover:w-full hover:py-1 hover:text-white'><a href="./nurses.html" class="dropdown-item">Nurses</a></li>
+              <li class='pl-5 pt-2 text-[#014470] hover:bg-[#098666] hover:w-full hover:py-1 hover:text-white'>
+                <a href="./medicalDoctor.html" class="dropdown-item"
+                  >Medical Doctors</a
+                >
+              </li>
+              <li class='pl-5 pt-2 text-[#014470] hover:bg-[#098666] hover:w-full hover:py-1 hover:text-white'>
+                <a href="./careSupport.html" class="dropdown-item"
+                  >Care Support Worker</a
+                >
+              </li>
+            </ul></div>
+          </li>
+          <li><a href="./employers.html" class="nav-link xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">Employers</a></li>
+          <li><a href="./contact.html" class="nav-link xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">Contact Us</a></li>
+        </ul>
+        <ul class=" hidden lg:flex">
+          <li class="mt-2 lg:px-5 xl:px-7 py-[6px] font-semibold flex justify-center items-center rounded-full bg-[#098666] text-white"><a href="#section1" class=''>Register Now</a></li>
+        </ul>
+
+        <!-- mobile -->
+        <ul class="flex justify-between lg:hidden">
+          <li class="">
+            <a href="index.html">
+            
+            </a>
+          </li>
+
+          <button
+            class="mr-4"
+            id="openMenuButton"
+            class="text-gray-300 mt-3 hover:bg-black hover:text-yellow-500 rounded-full"
+          >
+            <span id="mobile-open" class="mobile-open pt-2">
+              <img src="./images/hamburger.png" width="27" />
+            </span>
+
+            <span id="mobile-close" class="mobile-close mt-2 hidden">
+              <img src="./images/close.png" width="23" />
+            </span>
+          </button>
+        </ul></nav>
+        <div
+          id="mobile-menu-list"
+          class="mobile-menu-list hidden absolute top-0 text-3xl bg-gradient-to-r from-[#ffffff] to-[#71C8E4] w-full z-10 flex items-center origin-start h-[100vh] justify-start center overflow-hidden"
+        >
+        
+          <ul
+            class=" flex flex-col space-y-[3rem] mt-5 p-7 w-full uppercase animate-open-menu"
+          >
+          <li class="">
+            <a class="mobile-link text-[#014470] hover:text-[#098666]" href="./index.html">Home</a>
+          </li>
+            <li class="">
+              <a class="text-[#014470] mobile-link hover:text-[#098666]" href="./about.html">About</a>
+            </li>
+            <li 
+            onClick={toggleNavdown}
+            id="dropdownButtons"
+             class="text-[#014470] flex justify-between mobile-link hover:text-[#098666] relative text-3xl">
+              Job Seekers  
+                 <i id="navIcon" class='fa fa-chevron-down text-base mt-2'></i>  
+                 
+                 
+              <div id="navContent" class='absolute dropdown-content top-10 md:top-12 left-0 w-full h-[136.5px] bg-white shadow-lg rounded-md'>
+                <ul class='space-y-[10px]'>
+                  <li
+                    class="pl-5 pt-2 hover:bg-[#098666] text-xl hover:w-full hover:py-1 hover:text-white"
+                  >
+                    <a href='./nurses.html'>
+                     Nurses
+                    </a>
+                  </li>
+
+                  <li
+                    class="pl-5 pt-2 hover:bg-[#098666] text-xl hover:w-full hover:py-1 hover:text-white"
+                  >
+                    <a href='./medicalDoctor.html'>                   
+                      Medical doctors
+                    </a>
+                  </li>
+                  <li
+                    class="pl-5 pt-2 hover:bg-[#098666] text-xl uppercase hover:w-full hover:py-1 hover:text-white"
+                  >
+                    <a href='./careSupport.html'> 
+                      Care support worker
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class='text-[#014470] mobile-link hover:text-[#098666]' href="./contact.html">Contact Us</a>
+            </li>
+            <li>
+              <a class='text-[#014470] mobile-link hover:text-[#098666]' href="./employers.html">Employers</a>
+            </li>
+          </ul>
+        </div>    
+    </section>
+    <main>
+        <!-- hero -->
+        <section class='bg-gradient-to-r from-[#ffffff] to-[#71C8E4] h-[21rem] w-full md:h-[21rem] lg:h-[22.5rem] xl:h-[27rem]'>
+            <div class='mac:max-w-[83rem] md:max-w-[45rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[22rem] mx-auto '>
+              <p class='text-[#098666] text-sm pb-[12px] md:pb-0 md:text-xl pt-[8.5rem] md:pt-[7.5rem] lg:pt-[9rem] xl:pt-[9.5rem] text-center font-medium leading-[18px] md:leading-[20px]'>
+                JOB SEEKERS - NURSES
+              </p>
+              <h2 class='text-center text-[42px] md:text-[5.5rem] lg:text-[6rem] xl:text-[6.2rem] text-[#014470] font-normal leading-[42px] md:leading-[4rem] lg:leading-[4.7rem] xl:leading-[4rem] special-font'>
+                Nurses
+              </h2>
+              <div class='relative flex flex-col items-center justify-center pt-[2.7rem] md:pt-[3rem] lg:pt-[2rem] xl:pt-[3rem]'>
+                <img
+                  src='./images/Homecare.png'
+                  alt=''
+                  class='object-contain w-[20rem] hidden md:block md:w-[42rem] mac:w-[80rem] lg:w-[57rem] mac:h-[30rem] xl:w-[70rem] xl:h-[28rem]'
+                />
+                <img
+                  src='./images/nurses.png'
+                  alt=''
+                  class='object-contain w-[20rem]  md:hidden md:w-[42rem] mac:w-[80rem] lg:w-[57rem] mac:h-[30rem] xl:w-[70rem] xl:h-[28rem]'
+                />
+              </div>
+            </div>
+          </section>
+          <!-- services -->
+          <section class='mac:max-w-[83rem] pb-[3rem] md:max-w-[45rem] xl:max-w-[75rem] lg:max-w-[60rem] pro:max-w-[52rem] max-w-[20.5rem] iphone:max-w-[22rem] mx-auto '>
+            <div class='md:mt-[16rem] mt-[11.5rem] lg:mt-[18rem] xl:mt-[22rem] mac:mt-[26rem] flex flex-col gap-5  md:gap-8 lg:gap-0 md:flex-row md:justify-between'>
+              <span>
+                <p class='text-[#098666] text-center pb-[12px] md:pb-0 md:text-left font-medium leading-[20px]'>
+                  JOB SEEKERS - MEDICAL DOCTORS
+                </p>
+                <h3 class='text-[#014470] text-center md:text-left text-3xl md:text-4xl special-font lg:text-5xl lg:leading-[35px] xl:text-6xl mac:text-7xl font-normal xl:leading-[45px] mac:leading-[60px]'>
+                  Need to care
+                </h3>
+                <p class='pt-[38px] md:pt-[2.5rem]  text-[14px] w-[20.5rem] iphone:w-[22rem] leading-[28px] mx-auto md:mx-0 md:text-[12px] md:w-[20rem] lg:w-full flex flex-wrap text-[#26465B] lg:text-sm xl:text-base mac:text-lg font-normal md:leading-normal'>
+                  Finding a job in care can prove a daunting experience especially for
+                  <br class='hidden lg:block' />
+                  those looking to enter the sector for the first time. There are a
+                  whole <br class='hidden lg:block' />
+                  host of checks and processes to complete before you are eligible to
+                  <br class='hidden lg:block' />
+                  work in care and sometimes the whole experience can be over
+                  <br class='hidden lg:block' />
+                  complicated and drawn out.
+                  <br class='hidden lg:block' /> At Careworkers UK, we are here to
+                  help you find your next care job in
+                  <br class='hidden lg:block' /> the most simple and manageable
+                  way. From the outset, we have the
+                  <br class='hidden lg:block' /> tools and experience to judge
+                  whether working in care is right for you
+                  <br class='hidden lg:block' />
+                  and with a transparent approach you will always know exactly where
+                  <br class='hidden lg:block' />
+                  you stand.
+                  <br class='hidden lg:block' /> If we feel you are suited to
+                  working in care, we will support and hold
+                  <br class='hidden lg:block' /> your hand through the entire
+                  recruitment process, giving you advice
+                  <br class='hidden lg:block' /> and guidance so you can enter
+                  this sector with minimal fuss.
+                </p>
+                <h5 class='pt-[30px] pb-[18px] text-[#014470] md:text-[16.5px] lg:text-[22px] leading-normal font-semibold'>
+                  Experienced Career
+                </h5>
+                <p class='text-[#26465B]  text-[14px]  leading-[28px] md:w-[21rem] lg:w-full lg:text-sm xl:text-base mac:text-lg font-normal md:leading-[20px] lg:leading-[30px]'>
+                  If you’re an experienced carer and it’s a change of scenery you’re
+                  <br class='hidden lg:block' />
+                  looking for, speak to the recruitment team today who’ll be able to
+                  <br class='hidden lg:block' />
+                  advise you on the opportunities we have available or see the current
+                  <br class='hidden lg:block' />
+                  jobs we have available below.
+                </p>
+              </span>
+              <article class='relative mt-7 lg:mt-9 xl:mt-11 mac:mt-14'>
+                <div>
+                  <h5 class='text-[#014470] font-semibold text-[26px] text-center md:text-left leading-[40px] md:text-lg lg:text-[22px] xl:text-[32px] md:leading-[30px]'>
+                    Join us Today and Unveil your Future
+                  </h5>
+      
+                  <p class='lg:py-[24px] pt-[48px] pb-[32px] md:py-[18px] mac:py-[30px] text-[#26465B]  md:w-[20rem] lg:w-full md:text-[12px] text-[14px] leading-[28px] lg:text-sm xl:text-base mac:text-lg font-normal md:leading-[20px] lg:leading-[30px]'>
+                    When you feel prepared, apprise us of a suitable
+                    <br class='hidden md:block' /> rendezvous to connect with one
+                    of our esteemed
+                    <br class='hidden md:block' /> nursing team members at
+                    Fijanhealthcare. Commence <br class='hidden md:block' />
+                    your journey by clicking the “Register Today” button.
+                  </p>
+                  <HashRouterLink smooth to='#section1'>
+                    
+                    <div class='flex'>
+                      <button class='flex-grow md:flex-grow-0 px-5 xl:px-7 py-2 md:text-sm lg:text-base flex justify-center items-center rounded-full bg-[#098666] text-white'>
+                     Register Now
+                      </button>
+                    </div>
+                  </HashRouterLink>
+                </div>
+                <img
+                  src='./images/Frame.png'
+                  alt=''
+                  class='lg:mr-[6rem] ml-[0.7rem] mt-[90px] h-[120px] md:h-[150px] object-contain md:mr-[4rem] md:mt-[87px] lg:mt-16 xl:mt-[72px] mac:mt-32 xl:mr-[10rem]'
+                />
+                <div class='bg-[#E1F8FF] w-[285px] cursor-pointer iphone:w-[300px] md:h-[210px] mac:h-[250px]  rounded-lg px-[29px] lg:px-[44px] py-[1.2rem] lg:py-[1.5rem] xl:py-[2rem] mac:py-[2.5rem] absolute z-10 top-[400px] left-10 md:top-60 lg:top-[276px] xl:top-64 mac:top-80 md:right-1 lg:right-5 md:w-[300px] lg:w-[370px] xl:w-[414px]'>
+                  <h2 class='text-[#012D4A] text-[22px]  md:text-[28px] mac:text-[32px] font-medium leading-normal'>
+                    Other Services
+                  </h2>
+                  <p class='pt-[24px] pb-[10px] border-b-2 border-[#71C8E4] text-[#098666] font-medium leading-normal md:text-[20px] mac:text-[24px]'>
+                    <Link to='./nurses.html'> Nurses</Link>
+                  </p>
+                  <p class='pt-[18px] pb-[10px]  text-[#098666] font-medium leading-normal md:text-[20px] mac:text-[24px]'>
+                    <Link to='./careSupport.html'> Care Support Worker</Link>
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class='mac:mt-24 md:mt-[5rem] lg:mt-[7rem] mt-[7rem] pb-5 flex flex-col gap-10 md:gap-20 lg:gap-0 justify-center md:flex-row md:justify-between items-center'>
+              <img
+                src='./images/homecares.png'
+                alt=''
+                class='h-[16rem] w-[19rem] iphone:w-[20rem] md:w-[18.5rem] md:h-[15.5rem] lg:w-[27rem] lg:h-[23rem] xl:w-[35rem] mac:w-[42rem] xl:h-[28rem] mac:h-[32rem]'
+              />
+              <div class='w-[19.5rem] md:w-[22rem] mx-auto xl:w-[35rem] lg:w-[27.5rem]'>
+                <h4 class='text-[#014470] md:text-left text-center text-[27px] lg:text-[20px] xl:text-[24px] font-semibold leading-normal'>
+                  What to Expect from Us
+                </h4>
+      
+                <ul class='list-disc px-3 md:px-0 mt-[1.5rem] lg:mt-[2rem] space-y-[1.2rem] lg:space-y-[1.5rem]'>
+                  <li class='text-[#26465B] font-normal leading-normal text-sm md:text-xs lg:text-base xl:text-lg'>
+                    A dedicated and professional recruitment team
+                  </li>
+                  <li class='text-[#26465B] font-normal leading-normal text-sm md:text-xs lg:text-base xl:text-lg'>
+                    Expert careers guidance and development
+                  </li>
+                  <li class='text-[#26465B] font-normal leading-normal text-sm md:text-xs lg:text-base xl:text-lg'>
+                    Ongoing support
+                  </li>
+                  <li class='text-[#26465B] font-normal leading-normal text-sm md:text-xs lg:text-base xl:text-lg'>
+                    Excellent understanding of the care sector
+                  </li>
+                  <li class='text-[#26465B] font-normal leading-normal text-sm md:text-xs lg:text-base xl:text-lg'>
+                    Commitment to best recruitment practices
+                  </li>
+                  <li class='text-[#26465B] pb-3 font-normal leading-normal text-sm md:text-xs lg:text-base xl:text-lg'>
+                    Esteemed Partner with Leading Healthcare Institutions
+                  </li>
+                  
+                  <div class='md:flex hidden'>
+                    <button class='px-5 flex-grow md:px-5 md:flex-grow-0 xl:px-7 md:text-sm lg:text-base py-2 flex justify-center items-center rounded-full bg-[#098666] text-white'>
+                       Download our CV template   
+                    </button>
+                  </div>
+                  
+                </ul>
+                <div class='flex mt-[1.2rem] md:hidden'>
+                  <button class='px-5 flex-grow md:px-5 md:flex-grow-0 xl:px-7 md:text-sm lg:text-base py-2 flex justify-center items-center rounded-full bg-[#098666] text-white'>
+                 Download our CV template
+                    
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- filter -->
+          <section class='my-[2rem] md:mt-[4rem] mb-[1rem] lg:my-[4rem] md:block py-[45px] md:h-[550px] xl:h-[445px] md:py-[60px] bg-[#E8FAFF]'>
+            <h2 class='special-font text-[42px] leading-[35px] text-[#014470] text-center font-normal md:text-5xl xl:text-[72px] md:leading-[60px]'>
+              Check our latest Care
+              <br class='md:hidden' /> Support <br class='hidden md:block' />
+              Worker Jobs
+            </h2>
+            <div class='flex flex-col xl:flex-row xl:justify-evenly pt-[50px] md:pt-[60px] lg:pt-[80px] xl:pt-[104px] mac:max-w-[83rem]  md:max-w-[45rem] xl:max-w-[75rem] lg:max-w-[50rem] pro:max-w-[52rem] max-w-[20.5rem] iphone:max-w-[22rem]  mx-auto'>
+              <article class='flex gap-7 flex-1 xl:flex-none'>
+                
+                <div class='relative flex flex-1 xl:flex-none'>
+                  
+                  <input
+                    type='text'
+                    placeholder='Search'
+                    class='bg-white flex-1 xl:flex-none xl:px-5 py-3 placeholder:text-[#90C2E4] pl-5 focus:outline-blue-300 border-2 border-[#E2E2E2]'
+                  />
+                  <CiSearch class='absolute text-[#26465B] right-5 top-3 text-2xl font-semibold' />
+                </div>
+                <div class='relative hidden md:flex flex-1 xl:flex-none'>
+                  
+                  <select class='py-3 flex-1 xl:flex-none xl:w-[215px] pl-5 appearance-none border-2 border-[#E2E2E2] focus:outline-blue-300 text-[#26465B] text-sm md:text-lg font-semibold leading-normal'>
+                    <option class='text-[#26465B]'>All Job Category</option>
+                    <option class='text-[#26465B]'>Nurses</option>
+                    <option class='text-[#26465B]'>Medical Doctors</option>
+                    <option class='text-[#26465B]'>Care Support Worker</option>
+                  </select>
+                  <IoIosArrowDown class='text-base md:text-xl  text-[#26465B] absolute right-5 top-[18px] z-20' />
+                </div>
+              </article>
+        
+              <div class='flex gap-3 md:gap-5 mt-8 xl:mt-0 flex-1 xl:flex-none'>
+                <div class='relative flex md:hidden flex-1 xl:flex-none'>
+                  
+                  <select class='py-3 flex-1 xl:flex-none xl:w-[215px] pl-[14px] md:pl-5 appearance-none border-2 border-[#E2E2E2] bg-white focus:outline-blue-300 text-[#26465B] text-sm md:text-lg font-semibold leading-normal'>
+                    <option class='text-[#26465B]'>All Job Category</option>
+                    <option class='text-[#26465B]'>Nurses</option>
+                    <option class='text-[#26465B]'>Medical Doctors</option>
+                    <option class='text-[#26465B]'>Care Support Worker</option>
+                  </select>
+                  <IoIosArrowDown class=' md:text-xl text-base  text-[#26465B] absolute right-[14px] md:right-5 top-[18px] z-20' />
+                </div>
+                <div class='relative flex flex-1 xl:flex-none'>
+                  
+                  <select class='py-3 flex-1 xl:flex-none pl-5 w-[175px] border-2 appearance-none border-[#E2E2E2] focus:outline-blue-300 bg-white text-[#26465B] text-sm md:text-lg font-semibold leading-normal'>
+                    <option>All Job Type</option>
+                    <option class='text-[#26465B]'>Full Time</option>
+                    <option class='text-[#26465B]'>Per Time</option>
+                    <option class='text-[#26465B]'>Contract</option>
+                  </select>
+                  <IoIosArrowDown class='text-base md:text-xl text-[#26465B] absolute right-5 top-[18px] z-20' />
+                </div>
+        
+                <div class='relative hidden md:flex flex-1 xl:flex-none'>
+                  
+                  <select class='py-3 xl:flex-none flex-1 xl:w-[210px] pl-5 border-2 appearance-none bg-white border-[#E2E2E2] focus:outline-blue-300 text-[#26465B] text-sm md:text-lg font-semibold leading-normal'>
+                    <option>All Job Location</option>
+                    <option class='text-[#26465B]'>Toronto</option>
+                    <option class='text-[#26465B]'>Florida</option>
+                    <option class='text-[#26465B]'>New York</option>
+                    <option class='text-[#26465B]'>LA</option>
+                  </select>
+                  <IoIosArrowDown class='text-base md:text-xl text-[#26465B] absolute right-5 top-[18px] z-20' />
+                </div>
+              </div>
+              <div class='relative mt-7 md:hidden flex flex-1 xl:flex-none'>
+                
+                <select class='py-3 xl:flex-none flex-1 xl:w-[210px] pl-5 border-2 appearance-none bg-white border-[#E2E2E2] focus:outline-blue-300 text-[#26465B] text-sm md:text-lg font-semibold leading-normal'>
+                  <option>All Job Location</option>
+                  <option class='text-[#26465B]'>London</option>
+                  <option class='text-[#26465B]'>Milton Keynes</option>
+                  <option class='text-[#26465B]'>Northampton </option>
+                  <!-- {/* <option class='text-[#26465B]'>LA</option> */} -->
+                </select>
+                <IoIosArrowDown class='text-base md:text-xl text-[#26465B] absolute right-5 top-[18px] z-20' />
+              </div>
+        
+              <button class='xl:flex-none text-sm md:text-lg mt-10 xl:mt-0 py-3 lg:px-5 xl:px-7 rounded-full xl:py-0 bg-[#098666] text-white'>
+                Search
+              </button>
+            </div>
+          </section>
+          <!-- jobs -->
+          <section class='mac:max-w-[83rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[20.5rem] iphone:max-w-[22rem] mx-auto pt-[3.5rem] pb-[2rem] md:py-[3rem] lg:py-0 lg:pt-[3rem] lg:pb-[4rem] xl:pb-[0rem] xl:pt-[3rem] mac:pt-[4rem] mac:pb-[2rem]'>
+            <h6 class='text-center pb-[12px] md:pb-0 text-lg text-[#098666] lg:text-[1.25rem] xl:text-[1.4rem] font-semibold leading-[1.25rem] '>
+              HOT JOBS
+            </h6>
+        
+            <h1 class='text-center special-font text-[42px] leading-[40px] md:text-4xl md:leading-normal lg:leading-[3.85rem] font-normal lg:text-5xl xl:text-6xl mac:text-7xl text-[#014470] '>
+              Nursing and Healthcare Hot jobs
+            </h1>
+            <div class='flex flex-col justify-center items-center gap-10 md:gap-0 md:flex-row md:justify-around pt-[67px] pb-[55px] md:pt-[2.5rem] md:pb-[1rem] lg:pb-0 mac:justify-between lg:py-[3rem] xl:py-[4rem]'>
+              
+                <div             
+                  class='md:w-[12.8375rem] w-[300px] iphone:w-[319px] h-[342px] md:h-[18.5375rem] lg:w-[17.5375rem] py-[1.5rem] xl:w-[17.9375rem] mac:w-[19.9375rem] xl:h-[22.575rem] lg:h-[20.375rem] bg-[#0171BB] rounded-xl px-[1.2rem] md:py-[1.2rem] lg:py-[1.7rem]'
+                >
+                  <h4 class='text-[#fff] hidden md:block lg:pb-[1rem] md:pb-[0.5rem] mac:pb-[1.5rem] md:text-[14px] lg:text-[1rem] mac:text-[1.25rem] font-bold leading-[1.25rem]'>
+                    RMN
+                  </h4>
+                  <h4 class='text-[#fff] block pb-[1.5rem] md:hidden lg:pb-[1rem] md:pb-[0.5rem] mac:pb-[1.5rem] md:text-[12px] lg:text-[1rem] mac:text-[1.25rem] font-bold leading-[1.25rem]'>
+                    RMN
+                  </h4>
+                  <p class='text-white pb-[0.8rem] text-[16px] md:text-sm lg:text-base font-light leading-[1.25rem]'>
+                    $10.42
+                  </p>
+                  <p class='text-white text-[16px] pb-[0.9rem] md:text-sm lg:text-base md:pb-[0.7rem] lg:pb-[1.2rem] font-light leading-[20px] md:leading-[1.25rem] border-b-[1px] border-[#fff]'>
+                    Sutton Coldfield
+                  </p>
+                  <p class='text-white py-[0.9rem] lg:py-[1.2rem] text-[16px] leading-[22.4px] text-justify md:text-xs xl:text-base font-light md:leading-[1.35rem]'>
+                    A beautiful Nursing home in the leafy town of Sutton Coldfield, sitting on bus and tarain routesiffering regular hours to experienced staff
+                  </p>
+                  <p class='text-white lg:pt-[0.8rem] pt-[0.5rem] xl:pt-[1rem] underline text-[16px] md:text-sm xl:text-base font-light leading-[1.35rem]'>
+                    <Link to='/jobs'>SEE FULL DETAILS HERE</Link>
+                  </p>
+                </div>
+             <!-- 2nd job -->
+             <div             
+             class='md:w-[12.8375rem] w-[300px] iphone:w-[319px] h-[342px] md:h-[18.5375rem] lg:w-[17.5375rem] py-[1.5rem] xl:w-[17.9375rem] mac:w-[19.9375rem] xl:h-[22.575rem] lg:h-[20.375rem] bg-[#0171BB] rounded-xl px-[1.2rem] md:py-[1.2rem] lg:py-[1.7rem]'
+           >
+             <h4 class='text-[#fff] hidden md:block lg:pb-[1rem] md:pb-[0.5rem] mac:pb-[1.5rem] md:text-[14px] lg:text-[1rem] mac:text-[1.25rem] font-bold leading-[1.25rem]'>
+               RMN
+             </h4>
+             <h4 class='text-[#fff] block pb-[1.5rem] md:hidden lg:pb-[1rem] md:pb-[0.5rem] mac:pb-[1.5rem] md:text-[12px] lg:text-[1rem] mac:text-[1.25rem] font-bold leading-[1.25rem]'>
+               RMN
+             </h4>
+             <p class='text-white pb-[0.8rem] text-[16px] md:text-sm lg:text-base font-light leading-[1.25rem]'>
+               $10.42
+             </p>
+             <p class='text-white text-[16px] pb-[0.9rem] md:text-sm lg:text-base md:pb-[0.7rem] lg:pb-[1.2rem] font-light leading-[20px] md:leading-[1.25rem] border-b-[1px] border-[#fff]'>
+               Sutton Coldfield
+             </p>
+             <p class='text-white py-[0.9rem] lg:py-[1.2rem] text-[16px] leading-[22.4px] text-justify md:text-xs xl:text-base font-light md:leading-[1.35rem]'>
+               A beautiful Nursing home in the leafy town of Sutton Coldfield, sitting on bus and tarain routesiffering regular hours to experienced staff
+             </p>
+             <p class='text-white lg:pt-[0.8rem] pt-[0.5rem] xl:pt-[1rem] underline text-[16px] md:text-sm xl:text-base font-light leading-[1.35rem]'>
+               <Link to='/jobs'>SEE FULL DETAILS HERE</Link>
+             </p>
+           </div>
+           <!-- 3rd -->
+           <div             
+           class='md:w-[12.8375rem] w-[300px] iphone:w-[319px] h-[342px] md:h-[18.5375rem] lg:w-[17.5375rem] py-[1.5rem] xl:w-[17.9375rem] mac:w-[19.9375rem] xl:h-[22.575rem] lg:h-[20.375rem] bg-[#0171BB] rounded-xl px-[1.2rem] md:py-[1.2rem] lg:py-[1.7rem]'
+         >
+           <h4 class='text-[#fff] hidden md:block lg:pb-[1rem] md:pb-[0.5rem] mac:pb-[1.5rem] md:text-[14px] lg:text-[1rem] mac:text-[1.25rem] font-bold leading-[1.25rem]'>
+             RMN
+           </h4>
+           <h4 class='text-[#fff] block pb-[1.5rem] md:hidden lg:pb-[1rem] md:pb-[0.5rem] mac:pb-[1.5rem] md:text-[12px] lg:text-[1rem] mac:text-[1.25rem] font-bold leading-[1.25rem]'>
+             RMN
+           </h4>
+           <p class='text-white pb-[0.8rem] text-[16px] md:text-sm lg:text-base font-light leading-[1.25rem]'>
+             $10.42
+           </p>
+           <p class='text-white text-[16px] pb-[0.9rem] md:text-sm lg:text-base md:pb-[0.7rem] lg:pb-[1.2rem] font-light leading-[20px] md:leading-[1.25rem] border-b-[1px] border-[#fff]'>
+             Sutton Coldfield
+           </p>
+           <p class='text-white py-[0.9rem] lg:py-[1.2rem] text-[16px] leading-[22.4px] text-justify md:text-xs xl:text-base font-light md:leading-[1.35rem]'>
+             A beautiful Nursing home in the leafy town of Sutton Coldfield, sitting on bus and tarain routesiffering regular hours to experienced staff
+           </p>
+           <p class='text-white lg:pt-[0.8rem] pt-[0.5rem] xl:pt-[1rem] underline text-[16px] md:text-sm xl:text-base font-light leading-[1.35rem]'>
+             <Link to='/jobs'>SEE FULL DETAILS HERE</Link>
+           </p>
+         </div>
+            </div>
+            <div class='flex md:justify-center'>
+              <button class='bg-[#098666] flex-grow justify-center md:flex-grow-0 mb-[15px] md:my-[2rem] lg:my-[3rem] xl:my-[0rem] flex gap-3 text-lg font-medium leading-[16px] text-white px-7 py-5 md:py-3 rounded-full'>
+                <Link to='/employers'> Explore Careers</Link>
+                <IoArrowForward class='text-white text-[18px]' />
+              </button>
+            </div>
+          </section>
+          <!-- footer -->
+          <section
+          class='bg-[#012D4A] h-full background-container md:h-full pro:h-full  lg:h-full md:mt-[3.5rem] lg:mt-[3.5rem]'
+        >
+          <article class='md:border-b-2 border-[#005773] px-4 iphone:px-0'>
+            <div class='mac:max-w-[83rem] md:max-w-[45rem] flex gap-3 md:gap-0 flex-col md:flex-row md:justify-between lg:max-w-[60rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[22rem] mx-auto pt-[2rem] md:py-[1rem]'>
+              <div class='flex gap-3 md:gap-5 items-center'>
+                <img src='./images/Logof.png' alt='' />
+                <h3 class='text-white text-[26px] md:text-[36.523px] font-semibold leading-[28.697px]'>
+                  FIJAN
+                </h3>
+              </div>
+              <div class='text-white font-semibold leading-normal block pt-[31px] md:hidden'>
+                <h2 class='text-[18px] md:text-[13px] lg:text-[15px] mac:text-lg'>
+                  About us
+                </h2>
+        
+                <p class='text-white pt-3 text-[16px]  md:text-[13px] lg:text-[15px] mac:text-lg font-normal leading-[28px]'>
+                  At Fijan, we are dedicated to
+                  <br /> providing exquisite, personalized
+                  <br /> healthcare services.
+                </p>
+                <div class='space-y-[16px] pt-[15px] md:hidden'>
+                  <h3 class='text-white text-[16px]  md:text-[13px] lg:text-[15px] mac:text-lg font-semibold leading-normal'>
+                    Socials
+                  </h3>
+                  <div class='text-white flex md:text-xl text-2xl lg:text-2xl space-x-[16px]'>
+                    
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                  </div>
+                </div>
+              </div>
+              <div class='flex relative my-[2rem]'>
+                <div class='absolute md:-top-5 top-0 md:right-[2rem] xl:right-3 mac:right-0'>
+                  <input
+                    type='text'
+                    placeholder='Start your health journey'
+                    class='md:w-[320px] w-[270px] iphone:w-[290px] lg:w-[420px] placeholder:text-[11px] h-[42px] focus:outline-blue-400 bg-[#F5FDFF] placeholder:text-[#90C2E4] rounded-full pl-4 md:pl-7'
+                  />
+                  <button class='bg-[#098666]  absolute top-0 -right-10 md:-right-5  text-white px-[32px] py-[10px] rounded-full'>
+                    Get Started
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class='md:border-b-2 border-[#005773]'>
+            <div class='mac:max-w-[83rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[20rem] iphone:max-w-[22rem] mx-auto pb-[3rem] md:pb-[4rem] lg:pb-[6rem] pt-[2.5rem]'>
+              <div class='grid grid-cols-1 gap-12 md:gap-7 lg:gap-0 md:grid-cols-3 lg:grid-cols-4 xl:gap-x-14 md:justify-center lg:justify-items-center'>
+                <div class='text-white hidden md:flex flex-col font-semibold leading-normal text-[10px]  md:text-[13px] lg:text-[15px] mac:text-lg'>
+                  <h2>About us</h2>
+                  <p class='text-white pt-3 text-[10px]  md:text-[13px] lg:text-[15px] mac:text-lg font-normal leading-[28px]'>
+                    At Fijan, we are dedicated to
+                    <br /> providing exquisite, personalized
+                    <br /> healthcare services.
+                  </p>
+        
+                  <div class='space-y-[16px] pt-[32px]'>
+                    <h3 class='text-white text-[16px] md:text-[13px] lg:text-[15px] mac:text-lg font-semibold leading-normal'>
+                      Socials
+                    </h3>
+                    <div class='text-white flex md:text-xl text-xl lg:text-2xl space-x-[16px]'>
+                      <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                    </div>
+                  </div>
+                </div>
+                <span class='flex justify-between md:contents'>
+                  <div class='space-y-[16px] pt-[1.5rem] md:pt-0 text-white'>
+                    <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
+                      Quick links
+                    </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      <Link to='/'> Home</Link>
+                    </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      <Link to='/about'> About us</Link>
+                    </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      <Link to='/employers'> Employers</Link>
+                    </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      <Link to='/contact'> Contact</Link>
+                    </p>
+                    <p
+                    id="dropdownButton"
+                      onClick={toggleDropdown}
+                      class='text-white cursor-pointer flex gap-3 text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'
+                    >
+                      Job Seekers
+                      <i id="dropdownIcon" class='fa fa-chevron-down text-sm mt-1'></i>  
+                    </p>
+                   
+                      <div id="dropdownContent" class='text-[11px] dropdown-content space-y-1 lg:text-sm lg:space-y-2 font-normal capitalize -mt-3'>
+                        <p class='hover:text-[#098666] cursor-pointer'>
+                          <Link to='/nurses'>nurses</Link>
+                        </p>
+                        <p class='hover:text-[#098666] cursor-pointer'>
+                          <Link to='/medicalDoctors cursor-pointer'>doctors</Link>
+                        </p>
+                        <p class='hover:text-[#098666]'>
+                          <Link to='/careSupport'>care support</Link>
+                        </p>
+                      </div>
+                   
+                  </div>
+        
+                  <div class='space-y-[16px] pt-[1.5rem] md:pt-0 text-white'>
+                    <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
+                      Support
+                    </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      Privacy policy
+                    </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      FAQ
+                    </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      Condition of use
+                    </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      Cookies policy
+                    </p>
+                  </div>
+                </span>
+                <div class='space-y-[16px] pt-[1.5rem] hidden md:pt-0 text-white'>
+                  <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
+                    Quick links
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    <Link to='/'> Home</Link>
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    <Link to='/about'> About us</Link>
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    <Link to='/employers'> Employers</Link>
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    <Link to='/contact'> Contact</Link>
+                  </p>
+                  <p
+                    onClick={toggleDropdown}
+                    class='text-white cursor-pointer flex gap-3 text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'
+                  >
+                    Job Seekers <IoIosArrowDown class='mt-[6px]' />
+                  </p>      
+                </div>
+        
+                <div class='space-y-[16px] hidden pt-[1.5rem] md:pt-0 text-white'>
+                  <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
+                    Support
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    Privacy policy
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    FAQ
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    Condition of use
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    Cookies policy
+                  </p>
+                </div>
+                <div class='space-y-[16px]'>
+                  <h3 class='text-white text-[16px]  md:text-[13px] lg:text-[15px] mac:text-lg font-semibold leading-normal'>
+                    Contact
+                  </h3>
+        
+                  <p class='text-white flex gap-2 items-center text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                   
+                    <i class="fas fa-map-marker-alt md:text-xl text-2xl lg:text-lg"></i>  Address: 1564 The birminham
+                    <br /> road, United Kingdom
+                  </p>
+                  <p class='text-white flex gap-2 items-center text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                  
+                    <i class="fas fa-phone md:text-xl text-2xl lg:text-lg"></i>
+                    Email: hello@fijan.co.uk
+                  </p>
+                  <p class='text-white flex gap-2 items-center text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                   
+                    <i class="fas fa-envelope md:text-xl text-2xl lg:text-lg"></i> Phone: +442200567789
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        
+          <p class='text-center hidden md:block font-normal mt-7 pb-4 text-[#F0F0F0] text-xs leading-normal'>
+            
+            Copyright © 2023 Fijan
+          </p>
+        </section>
+          </main>
+          <script src="./script.js"></script>
+  </body>
+</html>

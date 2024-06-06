@@ -7,16 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
   //     mobileMenu.style.display === 'block' ? 'none' : 'block';
   // });
 
-  const dropdowns = document.querySelectorAll('.dropdown');
-  dropdowns.forEach((dropdown) => {
-    dropdown.addEventListener('mouseenter', () => {
-      dropdown.querySelector('.dropdown-menu').style.display = 'block';
-    });
-    dropdown.addEventListener('mouseleave', () => {
-      dropdown.querySelector('.dropdown-menu').style.display = 'none';
-    });
-  });
-
   const mobileDropdowns = document.querySelectorAll('.mobile-dropdown');
   mobileDropdowns.forEach((dropdown) => {
     dropdown.addEventListener('click', () => {
@@ -24,6 +14,24 @@ document.addEventListener('DOMContentLoaded', () => {
       menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
     });
   });
+});
+
+// dropdown nav
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdown = document.querySelector('.dropdown');
+  const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+  const dropNone = dropdown.querySelector('.drops');
+
+  dropdown.addEventListener('mouseenter', () => {
+    dropdownMenu.style.display = 'block';
+  });
+  dropNone.addEventListener('mouseleave', () => {
+    dropdownMenu.style.display = 'none';
+  });
+
+  // dropdown.addEventListener('mouseleave', () => {
+  //   dropdownMenu.style.display = 'none';
+  // });
 });
 
 // frequent questions
@@ -141,4 +149,27 @@ navLinks2.forEach((link) => {
   }
 });
 
+// toggle mobile nav
+let isShow = false;
 
+const toggleNavdown = () => {
+  isShow = !isShow;
+  const dropdownContent = document.getElementById('navContent');
+  const dropdownIcon = document.getElementById('navIcon');
+
+  if (isShow) {
+    dropdownContent.classList.add('show');
+    dropdownIcon.classList.remove('fa-chevron-down');
+    dropdownIcon.classList.add('fa-chevron-up');
+  } else {
+    dropdownContent.classList.remove('show');
+    dropdownIcon.classList.remove('fa-chevron-up');
+    dropdownIcon.classList.add('fa-chevron-down');
+  }
+
+  console.log(isShow, 'open');
+};
+
+document
+  .getElementById('dropdownButtons')
+  .addEventListener('click', toggleNavdown);

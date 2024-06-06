@@ -41,29 +41,30 @@
         >
           <li class=''><a href="./index.html" class="nav-link xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg hover:bg-white transition duration-150 leading-[16px] font-medium rounded-full  border-2 border-[#014470] flex justify-center items-center ">Home</a></li>
           <li class=''><a href="./about.html" class="nav-link xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">About</a></li>
-          <li class="dropdown">
-            <button class="xl:px-7 lg:px-4 gap-2 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">
+          <li class="dropdown ">
+            <button class=" navlink xl:px-7 lg:px-4 gap-2 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">
               Job Seekers <i class="fas fa-caret-down"></i>
             </button>
-            <ul class="dropdown-menu hidden">
-              <li><a href="/nurses" class="dropdown-item">Nurses</a></li>
-              <li>
-                <a href="/medicalDoctors" class="dropdown-item"
+            <div class='dropdown-menu hidden drops absolute top-14 lg:left-[21rem] xl:left-[28.4rem] mac:left-[33rem] w-[195px] h-[108px] mt-2 bg-white shadow-lg rounded-md'>
+            <ul class="space-y-[6px]">
+              <li class='pl-5 pt-2 text-[#014470] hover:bg-[#098666] hover:w-full hover:py-1 hover:text-white'><a href="./nurses.html" class="dropdown-item">Nurses</a></li>
+              <li class='pl-5 pt-2 text-[#014470] hover:bg-[#098666] hover:w-full hover:py-1 hover:text-white'>
+                <a href="./medicalDoctor.html" class="dropdown-item"
                   >Medical Doctors</a
                 >
               </li>
-              <li>
+              <li class='pl-5 pt-2 text-[#014470] hover:bg-[#098666] hover:w-full hover:py-1 hover:text-white'>
                 <a href="/careSupport" class="dropdown-item"
                   >Care Support Worker</a
                 >
               </li>
-            </ul>
+            </ul></div>
           </li>
           <li><a href="./employers.html" class="nav-link xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">Employers</a></li>
           <li><a href="./contact.html" class="nav-link xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">Contact Us</a></li>
         </ul>
-        <ul class="mt-2 hidden lg:flex">
-          <li class="lg:px-5 xl:px-7 py-1 font-semibold flex justify-center items-center rounded-full bg-[#098666] text-white"><a href="#section1">Register Now</a></li>
+        <ul class=" hidden lg:flex">
+          <li class="mt-2 lg:px-5 xl:px-7 py-[6px] font-semibold flex justify-center items-center rounded-full bg-[#098666] text-white"><a href="#section1" class=''>Register Now</a></li>
         </ul>
 
         <!-- mobile -->
@@ -90,26 +91,58 @@
         </ul></nav>
         <div
           id="mobile-menu-list"
-          class="mobile-menu-list hidden absolute top-0 text-3xl bg-gradient-to-r from-[#ffffff] to-[#71C8E4] w-full z-10 flex items-center origin-start h-[100vh] justify-center center overflow-hidden"
+          class="mobile-menu-list hidden absolute top-0 bg-gradient-to-r from-[#ffffff] to-[#71C8E4] w-full z-10 flex items-center origin-start h-[100vh] justify-start center overflow-hidden"
         >
-        
           <ul
-            class=" flex flex-col space-y-[3rem] mt-5 p-7  uppercase animate-open-menu"
+            class=" flex flex-col space-y-[3rem] mt-5 p-7 w-full uppercase animate-open-menu"
           >
           <li class="">
-            <a class="mobile-link text-[#014470] hover:text-[#098666]" href="./index.html">Home</a>
+            <a class="mobile-link text-[#014470] hover:text-[#098666] text-3xl" href="./index.html">Home</a>
           </li>
             <li class="">
-              <a class="text-[#014470] mobile-link hover:text-[#098666]" href="./about.html">About</a>
+              <a class="text-[#014470] mobile-link hover:text-[#098666] text-3xl" href="./about.html">About</a>
             </li>
-            <li class="">
-              <a class='text-[#014470] mobile-link hover:text-[#098666]' href=".html">Services</a>
+
+            <li 
+            onClick={toggleNavdown}
+            id="dropdownButtons"
+             class="text-[#014470] flex justify-between mobile-link hover:text-[#098666] relative text-3xl">
+              Job Seekers  
+                 <i id="navIcon" class='fa fa-chevron-down text-base mt-2'></i>  
+                 
+                 
+              <div id="navContent" class='absolute dropdown-content top-10 md:top-12 left-0 w-full h-[136.5px] bg-white shadow-lg rounded-md'>
+                <ul class='space-y-[10px]'>
+                  <li
+                    class="pl-5 pt-2 hover:bg-[#098666] text-xl hover:w-full hover:py-1 hover:text-white"
+                  >
+                    <a href='./nurses.html'>
+                     Nurses
+                    </a>
+                  </li>
+
+                  <li
+                    class="pl-5 pt-2 hover:bg-[#098666] text-xl hover:w-full hover:py-1 hover:text-white"
+                  >
+                    <a href='./medicalDoctor.html'>                   
+                      Medical doctors
+                    </a>
+                  </li>
+                  <li
+                    class="pl-5 pt-2 hover:bg-[#098666] text-xl uppercase hover:w-full hover:py-1 hover:text-white"
+                  >
+                    <a href='./careSupport.html'> 
+                      Care support worker
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
-              <a class='text-[#014470] mobile-link hover:text-[#098666]' href="./contact.html">Contact Us</a>
+              <a class='text-[#014470] mobile-link text-3xl hover:text-[#098666]' href="./contact.html">Contact Us</a>
             </li>
             <li>
-              <a class='text-[#014470] mobile-link hover:text-[#098666]' href="./employers.html">Employers</a>
+              <a class='text-[#014470] mobile-link text-3xl hover:text-[#098666]' href="./employers.html">Employers</a>
             </li>
             <!-- <li>
               <a href="contact.html"> book now</a>
