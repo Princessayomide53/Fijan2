@@ -14,6 +14,29 @@ document.addEventListener('DOMContentLoaded', () => {
       menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
     });
   });
+
+
+  //
+  const searchIcon = document.querySelector('.search-icon-1');
+  const searchForm = document.querySelector(".search-form-1");
+
+  searchIcon.addEventListener('click', () => {
+
+    // searchForm.style.backdropFilter = blur('5px');
+searchForm.classList.toggle('hidden');
+  });
+
+
+  const searchIcon2 = document.querySelector(".search-icon-2");
+  const searchForm2 = document.querySelector(".search-form-2");
+
+  searchIcon2.addEventListener("click", () => {
+    
+    // searchForm.style.backdropFilter = blur('5px');
+    searchForm2.classList.toggle("hidden");
+    searchIcon2.style.display = 'none';
+  });
+
 });
 
 // dropdown nav
