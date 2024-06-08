@@ -110,7 +110,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);"
         </ul></nav>
         <div
           id="mobile-menu-list"
-          class="mobile-menu-list hidden absolute top-0 bg-gradient-to-r from-[#ffffff] to-[#71C8E4] w-full z-10 sm:flex lg:hidden items-center origin-start h-[100vh] justify-start center overflow-hidden"
+          class="mobile-menu-list hidden absolute top-0 bg-gradient-to-r from-[#ffffff] to-[#71C8E4] w-full z-10 flex items-center origin-start h-[100vh] justify-start center overflow-hidden"
         >
           <ul
             class=" flex flex-col max-w-[20.5rem] iphone:max-w-[22rem] mx-auto space-y-[2rem] mt-5 p-3 w-full uppercase animate-open-menu"
@@ -781,205 +781,200 @@ border: 1px solid rgba(255, 255, 255, 0.3);"
   </section>
   <!-- footer -->
   <section
-  class='bg-[#012D4A] h-full background-container md:h-full pro:h-full  lg:h-full md:mt-[3.5rem] lg:mt-[3.5rem]'
->
-  <article class='md:border-b-2 border-[#005773] px-4 iphone:px-0'>
-    <div class='mac:max-w-[83rem] md:max-w-[45rem] flex gap-3 md:gap-0 flex-col md:flex-row md:justify-between lg:max-w-[60rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[22rem] mx-auto pt-[2rem] md:py-[1rem]'>
-      <div class='flex gap-3 md:gap-5 items-center'>
-        <img src='./images/Logof.png' alt='' />
-        <h3 class='text-white text-[26px] md:text-[36.523px] font-semibold leading-[28.697px]'>
-          FIJAN
-        </h3>
-      </div>
-      <div class='text-white font-semibold leading-normal block pt-[31px] md:hidden'>
-        <h2 class='text-[18px] md:text-[13px] lg:text-[15px] mac:text-lg'>
-          About us
-        </h2>
-
-        <p class='text-white pt-3 text-[16px]  md:text-[13px] lg:text-[15px] mac:text-lg font-normal leading-[28px]'>
-          At Fijan, we are dedicated to
-          <br /> providing exquisite, personalized
-          <br /> healthcare services.
-        </p>
-        <div class='space-y-[16px] pt-[15px] md:hidden'>
-          <h3 class='text-white text-[16px]  md:text-[13px] lg:text-[15px] mac:text-lg font-semibold leading-normal'>
-            Socials
-          </h3>
-          <div class='text-white flex md:text-xl text-2xl lg:text-2xl space-x-[16px]'>
-            
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-pinterest"></i>
-          </div>
-        </div>
-      </div>
-      <div class='flex relative my-[2rem]'>
-        <div class='absolute md:-top-5 top-0 md:right-[2rem] xl:right-3 mac:right-0'>
-          <input
-            type='text'
-            placeholder='Start your health journey'
-            class='md:w-[320px] w-[270px] iphone:w-[290px] lg:w-[420px] placeholder:text-[11px] h-[42px] focus:outline-blue-400 bg-[#F5FDFF] placeholder:text-[#90C2E4] rounded-full pl-4 md:pl-7'
-          />
-          <button class='bg-[#098666]  absolute top-0 -right-10 md:-right-5  text-white px-[32px] py-[10px] rounded-full'>
-            Get Started
-          </button>
-        </div>
-      </div>
-    </div>
-  </article>
-  <article class='md:border-b-2 border-[#005773]'>
-    <div class='mac:max-w-[83rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[20rem] iphone:max-w-[22rem] mx-auto pb-[3rem] md:pb-[4rem] lg:pb-[6rem] pt-[2.5rem]'>
-      <div class='grid grid-cols-1 gap-12 md:gap-7 lg:gap-0 md:grid-cols-3 lg:grid-cols-4 xl:gap-x-14 md:justify-center lg:justify-items-center'>
-        <div class='text-white hidden md:flex flex-col font-semibold leading-normal text-[10px]  md:text-[13px] lg:text-[15px] mac:text-lg'>
-          <h2>About us</h2>
-          <p class='text-white pt-3 text-[10px]  md:text-[13px] lg:text-[15px] mac:text-lg font-normal leading-[28px]'>
-            At Fijan, we are dedicated to
-            <br /> providing exquisite, personalized
-            <br /> healthcare services.
-          </p>
-
-          <div class='space-y-[16px] pt-[32px]'>
-            <h3 class='text-white text-[16px] md:text-[13px] lg:text-[15px] mac:text-lg font-semibold leading-normal'>
-              Socials
-            </h3>
-            <div class='text-white flex md:text-xl text-xl lg:text-2xl space-x-[16px]'>
-              <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-pinterest"></i>
-            </div>
-          </div>
-        </div>
-        <span class='flex justify-between md:contents'>
-          <div class='space-y-[16px] pt-[1.5rem] md:pt-0 text-white'>
-            <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
-              Quick links
-            </p>
-            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-              <Link to='/'> Home</Link>
-            </p>
-            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-              <Link to='/about'> About us</Link>
-            </p>
-            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-              <Link to='/employers'> Employers</Link>
-            </p>
-            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-              <Link to='/contact'> Contact</Link>
-            </p>
-            <p
-            id="dropdownButton"
-              onClick={toggleDropdown}
-              class='text-white cursor-pointer flex gap-3 text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'
-            >
-              Job Seekers
-              <i id="dropdownIcon" class='fa fa-chevron-down text-sm mt-1'></i>
-             
-            </p>
-           
-              <div id="dropdownContent" class='text-[11px] dropdown-content space-y-1 lg:text-sm lg:space-y-2 font-normal capitalize -mt-3'>
-                <p class='hover:text-[#098666] cursor-pointer'>
-                  <Link to='/nurses'>nurses</Link>
-                </p>
-                <p class='hover:text-[#098666] cursor-pointer'>
-                  <Link to='/medicalDoctors cursor-pointer'>doctors</Link>
-                </p>
-                <p class='hover:text-[#098666]'>
-                  <Link to='/careSupport'>care support</Link>
-                </p>
+          class='bg-[#012D4A] h-full background-container md:h-full pro:h-full  lg:h-full md:mt-[3.5rem] lg:mt-[3.5rem]'
+        >
+          <article class='md:border-b-2 border-[#005773] px-4 iphone:px-0'>
+            <div class='mac:max-w-[83rem] md:max-w-[45rem] flex gap-3 md:gap-0 flex-col md:flex-row md:justify-between lg:max-w-[60rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[22rem] mx-auto pt-[2rem] md:py-[1rem]'>
+              <div class='flex gap-3 md:gap-5 items-center'>
+                <img src='./images/Logof.png' alt='' />
+                <h3 class='text-white text-[26px] md:text-[36.523px] font-semibold leading-[28.697px]'>
+                  FIJAN
+                </h3>
               </div>
-           
-          </div>
-
-          <div class='space-y-[16px] pt-[1.5rem] md:pt-0 text-white'>
-            <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
-              Support
-            </p>
-            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-              Privacy policy
-            </p>
-            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-              FAQ
-            </p>
-            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-              Condition of use
-            </p>
-            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-              Cookies policy
-            </p>
-          </div>
-        </span>
-        <div class='space-y-[16px] pt-[1.5rem] hidden md:pt-0 text-white'>
-          <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
-            Quick links
+              <div class='text-white font-semibold leading-normal block pt-[31px] md:hidden'>
+                <h2 class='text-[18px] md:text-[13px] lg:text-[15px] mac:text-lg'>
+                  About us
+                </h2>
+        
+                <p class='text-white pt-3 text-[16px]  md:text-[13px] lg:text-[15px] mac:text-lg font-normal leading-[28px]'>
+                  At Fijan, we are dedicated to
+                  <br /> providing exquisite, personalized
+                  <br /> healthcare services.
+                </p>
+                <div class='space-y-[16px] pt-[15px] md:hidden'>
+                  <h3 class='text-white text-[16px]  md:text-[13px] lg:text-[15px] mac:text-lg font-semibold leading-normal'>
+                    Socials
+                  </h3>
+                  <div class='text-white flex md:text-xl text-2xl lg:text-2xl space-x-[16px]'>
+                    
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                  </div>
+                </div>
+              </div>
+              <div class='flex relative my-[2rem]'>
+                <div class='absolute md:-top-5 top-0 md:right-[2rem] xl:right-3 mac:right-0'>
+                  <input
+                    type='text'
+                    placeholder='Start your health journey'
+                    class='md:w-[320px] w-[270px] iphone:w-[290px] lg:w-[420px] placeholder:text-[11px] h-[42px] focus:outline-blue-400 bg-[#F5FDFF] placeholder:text-[#90C2E4] rounded-full pl-4 md:pl-7'
+                  />
+                  <button class='bg-[#098666]  absolute top-0 -right-10 md:-right-5  text-white px-[32px] py-[10px] rounded-full'>
+                    Get Started
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class='md:border-b-2 border-[#005773]'>
+            <div class='mac:max-w-[83rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[20rem] iphone:max-w-[22rem] mx-auto pb-[3rem] md:pb-[4rem] lg:pb-[6rem] pt-[2.5rem]'>
+              <div class='grid grid-cols-1 gap-12 md:gap-7 lg:gap-0 md:grid-cols-3 lg:grid-cols-4 xl:gap-x-14 md:justify-center lg:justify-items-center'>
+                <div class='text-white hidden md:flex flex-col font-semibold leading-normal text-[10px]  md:text-[13px] lg:text-[15px] mac:text-lg'>
+                  <h2>About us</h2>
+                  <p class='text-white pt-3 text-[10px]  md:text-[13px] lg:text-[15px] mac:text-lg font-normal leading-[28px]'>
+                    At Fijan, we are dedicated to
+                    <br /> providing exquisite, personalized
+                    <br /> healthcare services.
+                  </p>
+        
+                  <div class='space-y-[16px] pt-[32px]'>
+                    <h3 class='text-white text-[16px] md:text-[13px] lg:text-[15px] mac:text-lg font-semibold leading-normal'>
+                      Socials
+                    </h3>
+                    <div class='text-white flex md:text-xl text-xl lg:text-2xl space-x-[16px]'>
+                      <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                    </div>
+                  </div>
+                </div>
+                <span class='flex justify-between md:contents'>
+                  <div class='space-y-[16px] pt-[1.5rem] md:pt-0 text-white'>
+                    <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
+                      Quick links
+                    </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      <a href='./index.html'> Home</a>                   </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      <a href ='./about.html'> About us</a>                   </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      <a href ='./employers.html'> Employers</a >                   </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      <a href='./contact.html'> Contact</a>                   </p>
+                    <p
+                    id="dropdownButton"
+                      onClick={toggleDropdown}
+                      class='text-white cursor-pointer flex gap-3 text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'
+                    >
+                      Job Seekers
+                      <i id="dropdownIcon" class='fa fa-chevron-down text-sm mt-1'></i>  
+                    </p>
+                   
+                      <div id="dropdownContent" class='text-[11px] dropdown-content space-y-1 lg:text-sm lg:space-y-2 font-normal capitalize -mt-3'>
+                        <p class='hover:text-[#098666] cursor-pointer'>
+                          <a href='./nurses.html'>nurses</a>
+                        </p>
+                        <p class='hover:text-[#098666] cursor-pointer'>
+                          <a href='./medicalDoctor.html'>doctors</a>
+                        </p>
+                        <p class='hover:text-[#098666]'>
+                          <a href='./careSupport.html'>care support</a>
+                        </p>
+                      </div>
+                   
+                  </div>
+        
+                  <div class='space-y-[16px] pt-[1.5rem] md:pt-0 text-white'>
+                    <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
+                      Support
+                    </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      Privacy policy
+                    </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      FAQ
+                    </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      Condition of use
+                    </p>
+                    <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                      Cookies policy
+                    </p>
+                  </div>
+                </span>
+                <div class='space-y-[16px] pt-[1.5rem] hidden md:pt-0 text-white'>
+                  <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
+                    Quick links
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    <a href='./index.html'> Home</a>
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    <a href='./about.html'> About us</a>
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    <a href='./employers.html'> Employers</a>
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    <a href='./contact.html'> Contact</a>
+                  </p>
+                  <p
+                    onClick={toggleDropdown}
+                    class='text-white cursor-pointer flex gap-3 text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'
+                  >
+                    Job Seekers <IoIosArrowDown class='mt-[6px]' />
+                  </p>      
+                </div>
+        
+                <div class='space-y-[16px] hidden pt-[1.5rem] md:pt-0 text-white'>
+                  <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
+                    Support
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    Privacy policy
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    FAQ
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    Condition of use
+                  </p>
+                  <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                    Cookies policy
+                  </p>
+                </div>
+                <div class='space-y-[16px]'>
+                  <h3 class='text-white text-[16px]  md:text-[13px] lg:text-[15px] mac:text-lg font-semibold leading-normal'>
+                    Contact
+                  </h3>
+        
+                  <p class='text-white flex gap-2 items-center text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                   
+                    <i class="fas fa-map-marker-alt md:text-xl text-2xl lg:text-lg"></i>  Address: 1564 The birminham
+                    <br /> road, United Kingdom
+                  </p>
+                  <p class='text-white flex gap-2 items-center text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                  
+                    <i class="fas fa-phone md:text-xl text-2xl lg:text-lg"></i>
+                    Email: hello@fijan.co.uk
+                  </p>
+                  <p class='text-white flex gap-2 items-center text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                   
+                    <i class="fas fa-envelope md:text-xl text-2xl lg:text-lg"></i> Phone: +442200567789
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        
+          <p class='text-center hidden md:block font-normal mt-7 pb-4 text-[#F0F0F0] text-xs leading-normal'>
+            
+            Copyright © 2023 Fijan
           </p>
-          <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-            <Link to='/'> Home</Link>
-          </p>
-          <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-            <Link to='/about'> About us</Link>
-          </p>
-          <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-            <Link to='/employers'> Employers</Link>
-          </p>
-          <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-            <Link to='/contact'> Contact</Link>
-          </p>
-          <p
-            onClick={toggleDropdown}
-            class='text-white cursor-pointer flex gap-3 text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'
-          >
-            Job Seekers <IoIosArrowDown class='mt-[6px]' />
-          </p>
-        </div>
-
-        <div class='space-y-[16px] hidden pt-[1.5rem] md:pt-0 text-white'>
-          <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
-            Support
-          </p>
-          <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-            Privacy policy
-          </p>
-          <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-            FAQ
-          </p>
-          <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-            Condition of use
-          </p>
-          <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-            Cookies policy
-          </p>
-        </div>
-        <div class='space-y-[16px]'>
-          <h3 class='text-white text-[16px]  md:text-[13px] lg:text-[15px] mac:text-lg font-semibold leading-normal'>
-            Contact
-          </h3>
-
-          <p class='text-white flex gap-2 items-center text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-           
-            <i class="fas fa-map-marker-alt md:text-xl text-2xl lg:text-lg"></i>  Address: 1564 The birminham
-            <br /> road, United Kingdom
-          </p>
-          <p class='text-white flex gap-2 items-center text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-          
-            <i class="fas fa-phone md:text-xl text-2xl lg:text-lg"></i>
-            Email: hello@fijan.co.uk
-          </p>
-          <p class='text-white flex gap-2 items-center text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-           
-            <i class="fas fa-envelope md:text-xl text-2xl lg:text-lg"></i> Phone: +442200567789
-          </p>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <p class='text-center hidden md:block font-normal mt-7 pb-4 text-[#F0F0F0] text-xs leading-normal'>
-    
-    Copyright © 2023 Fijan
-  </p>
-</section>
+        </section>
   </main>
   <script src="./script.js"></script>
 

@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jobs</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section
+      class="bg-gradient-to-r z-[100] fixed py-[2.6rem] lg:py-14 from-[#ffffff] to-[#71C8E4] w-full"
+
+      style="background: rgba(113, 200, 226, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);"
+    >
+      <nav
+        class="mac:max-w-[83rem] absolute top-7 lg:top-8 z-50 left-0 right-0 md:max-w-[45rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[20.5rem] iphone:max-w-[22rem] lg:max-w-[60rem] mx-auto flex justify-between"
+      >
+        <div class="flex justify-items-start items-center gap-2 mt-2">
+          <a href="index.html">
+          <img
+            src="./images/Logo.png"
+            alt="logo"
+            class="ml-2 md:ml-0 h-[2rem] xl:w-[39.301px] lg:w-[35.301px] lg:h-[45px] xl:h-[49px]"
+          />
+          <h2
+            class="text-[#0171BB] md:text-[1.5rem] lg:text-[1.5rem] xl:text-[2rem] mac:text-[2.23rem] font-bold leading-[28.697px]"
+          >
+            FIJAN
+            </a>
+          </h2>
+        </div>
+        <ul
+          class="lg:flex hidden xl:space-x-[1.5rem] lg:space-x-[1.4rem] mac:space-x-[3rem] lg:mt-4 xl:mt-3 mt-2 z-20"
+        >
+          <li class=''><a href="./index.html" class="nav-link xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg hover:bg-white transition duration-150 leading-[16px] font-medium rounded-full  border-2 border-[#014470] flex justify-center items-center ">Home</a></li>
+          <li class=''><a href="./about.html" class="nav-link xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">About</a></li>
+          <li class="dropdown ">
+            <button class=" navlink xl:px-7 lg:px-4 gap-2 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">
+              Job Seekers <i class="fas fa-caret-down"></i>
+            </button>
+            <div class='dropdown-menu hidden drops absolute top-14 lg:left-[21rem] xl:left-[28.4rem] mac:left-[33rem] w-[195px] h-[108px] mt-2 bg-white shadow-lg rounded-md'>
+            <ul class="">
+              <li class='pl-5 pt-2 text-[#014470] hover:bg-[#098666] hover:w-full hover:py-1 hover:text-white'><a href="./nurses.html" class="dropdown-item">Nurses</a></li>
+              <li class='pl-5 pt-2 text-[#014470] hover:bg-[#098666] hover:w-full hover:py-1 hover:text-white'>
+                <a href="./medicalDoctor.html" class="dropdown-item"
+                  >Medical Doctors</a
+                >
+              </li>
+              <li class='pl-5 pt-2 text-[#014470] hover:bg-[#098666] h-full hover:w-full hover:py-1 hover:text-white'>
+                <a href="./careSupport.html" class="dropdown-item"
+                  >Care Support Worker</a
+                >
+              </li>
+            </ul></div>
+          </li>
+          <li><a href="./employers.html" class="nav-link xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">Employers</a></li>
+          <li><a href="./contact.html" class="nav-link xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">Contact Us</a></li>
+
+          <li id="search-icon-1" class="search-icon-1"><a href="javascript:void(0)" class="nav-link py-1 flex justify-center items-center">
+            <svg aria-label="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+
+          </a></li>
+        </ul>
+        <ul class=" hidden lg:flex">
+          <li class="mt-2 lg:px-5 xl:px-7 py-[6px] font-semibold flex justify-center items-center rounded-full bg-[#098666] text-white"><a href="#section1" class=''>Register Now</a></li>
+        </ul>
+
+        <!-- mobile -->
+        <ul class="flex justify-between lg:hidden">
+          <li class="">
+            <a href="index.html">
+            
+            </a>
+          </li>
+
+          <button
+            class="mr-4"
+            id="openMenuButton"
+            class="text-gray-300 mt-3 hover:bg-black hover:text-yellow-500 rounded-full"
+          >
+            <span id="mobile-open" class="mobile-open pt-2">
+              <img src="./images/hamburger.png" width="27" />
+            </span>
+
+            <span id="mobile-close" class="mobile-close mt-2 hidden">
+              <img src="./images/close.png" width="23" />
+            </span>
+          </button>
+        </ul></nav>
+        <div
+          id="mobile-menu-list"
+          class="mobile-menu-list hidden absolute top-0 bg-gradient-to-r from-[#ffffff] to-[#71C8E4] w-full z-10 flex lg:hidden items-center origin-start h-[100vh] justify-start center overflow-hidden"
+        >
+          <ul
+            class=" flex flex-col max-w-[20.5rem] md:max-w-[45rem] iphone:max-w-[22rem] mx-auto space-y-[2rem] mt-5 p-3 w-full uppercase animate-open-menu"
+          >
+          <li class="">
+            <a class="mobile-link text-[#014470] hover:text-[#098666] text-3xl" href="./index.html">Home</a>
+          </li>
+            <li class="">
+              <a class="text-[#014470] mobile-link hover:text-[#098666] text-3xl" href="./about.html">About</a>
+            </li>
+
+            <li 
+            onClick={toggleNavdown}
+            id="dropdownButtons"
+             class="text-[#014470] job-seekers-main-link flex justify-between mobile-link hover:text-[#098666] relative text-3xl">
+              Job Seekers  
+                 <i id="navIcon" class='fa fa-chevron-down text-base mt-2'></i>  
+                 
+                 
+              <div id="navContent" class='absolute dropdown-content mobile-link top-10 md:top-12 left-0 w-full h-[136.5px] bg-white shadow-lg rounded-md'>
+                <ul class='space-y-[10px]'>
+                  <li
+                    class="pl-5 pt-2 hover:bg-[#098666] mobile-link text-xl hover:w-full hover:py-1 hover:text-white"
+                  >
+                    <a href='./nurses.html'>
+                     Nurses
+                    </a>
+                  </li>
+
+                  <li
+                    class="pl-5 pt-2 hover:bg-[#098666] mobile-link text-xl hover:w-full hover:py-1 hover:text-white"
+                  >
+                    <a href='./medicalDoctor.html'>                   
+                      Medical doctors
+                    </a>
+                  </li>
+                  <li
+                    class="pl-5 pt-2 hover:bg-[#098666] mobile-link text-xl uppercase hover:w-full hover:py-1 hover:text-white"
+                  >
+                    <a href='./careSupport.html'> 
+                      Care support worker
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class='text-[#014470] mobile-link text-3xl hover:text-[#098666]' href="./contact.html">Contact Us</a>
+            </li>
+            <li>
+              <a class='text-[#014470] mobile-link text-3xl hover:text-[#098666]' href="./employers.html">Employers</a>
+            </li>
+            <li id="search-icon-2" class="search-icon-2"><a href="javascript:void(0)" class="nav-link py-1 flex justify-self-end items-center">
+                <svg aria-label="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+            
+              </a></li>
+              <div id="search-form-2" class="hidden search-form-2"  aria-hidden="true">
+                <form>
+              <label
+                class="relative bg-white min-w-sm max-w-2xl flex flex-col md:flex-row items-center justify-center border py-2 px-2 rounded-2xl gap-2 shadow-2xl focus-within:border-gray-300"
+                for="search-bar">
+                <input type="search" id="search-bar" placeholder="your keyword here"
+            class="px-6 py-2 w-full rounded-md flex-1 outline-none bg-white">
+                  <button
+                    class="w-full md:w-auto px-6 py-3 bg-[#098666] border-[#098666] text-white fill-white active:scale-95 duration-100 border will-change-transform overflow-hidden relative rounded-xl transition-all disabled:opacity-70">
+                  
+                    <div class="relative">
+                  
+                      <!-- Loading animation change opacity to display -->
+                      <div
+                        class="flex items-center justify-center h-3 w-3 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 transition-all">
+                        <svg class="opacity-0 animate-spin w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 24 24">
+                          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                          <path class="opacity-75" fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                          </path>
+                        </svg>
+                      </div>
+                  
+                      <div class="flex items-center transition-all opacity-1 valid:"><span
+                          class="text-sm font-semibold whitespace-nowrap truncate mx-auto">
+                          Search
+                        </span>
+                      </div>
+                  
+                    </div>
+                  
+                  </button>
+              </label>
+              </form>
+              </div>
+              
+            <!-- <li>
+              <a href="contact.html"> book now</a>
+            </li> -->
+          </ul>
+        </div>
+      
+        <!-- search form starts -->
+        <div id="search-form-1" class="hidden search-form-1" aria-hidden="true">
+          <form>
+        <label
+          class="mx-auto mt-20 relative bg-white min-w-sm max-w-2xl flex flex-col md:flex-row items-center justify-center border py-2 px-2 rounded-2xl gap-2 shadow-2xl focus-within:border-gray-300"
+          for="search-bar">
+          <input id="search-bar" placeholder="your keyword here"
+            class="px-6 py-2 w-full rounded-md flex-1 outline-none bg-white">
+          <button
+            class="w-full md:w-auto px-6 py-3 bg-[#098666] border-[#098666] text-white fill-white active:scale-95 duration-100 border will-change-transform overflow-hidden relative rounded-xl transition-all disabled:opacity-70">
+        
+            <div class="relative">
+        
+              <!-- Loading animation change opacity to display -->
+              <div
+                class="flex items-center justify-center h-3 w-3 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 transition-all">
+                <svg class="opacity-0 animate-spin w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                  </path>
+                </svg>
+              </div>
+        
+              <div class="flex items-center transition-all opacity-1 valid:"><span
+                  class="text-sm font-semibold whitespace-nowrap truncate mx-auto">
+                  Search
+                </span>
+              </div>
+        
+            </div>
+        
+          </button>
+        </label>
+        </form>
+</div>
+        <!-- search form ends -->
+      
+    </section>
+    <!-- main -->
+    <main>
+    <section
+      class="h-full mac:max-w-[83rem] pt-[7.5rem] md:pt-[8.5rem] lg:pt-[10rem] md:max-w-[45rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[20rem] iphone:max-w-[22rem] mx-auto"
+    >
+      <h2
+        class="text-[#014470] text-[42px] special-font md:text-5xl xl:text-[72px] leading-[70px] font-normal"
+      >
+        Home Support
+      </h2>
+      <p
+        class="md:pt-[60px] pt-[30px] w-[20.5rem] iphone:w-[22rem] text-justify md:text-left md:w-full text-[#26465B] text-sm lg:text-lg font-normal leading-[28px]"
+      >
+        A Live-in Care Nurse is a compassionate and dedicated healthcare
+        professional who provides personalized and round- {/*
+        <br class="hidden md:block" />
+        */} the-clock care to individuals in the comfort of their own homes.
+        They offer essential medical assistance and support to {/*
+        <br class="hidden md:block" />
+        */} individuals who require ongoing medical attention, such as the
+        elderly, those with chronic illnesses, or individuals {/*
+        <br class="hidden md:block" />
+        */} recovering from surgeries or injuries.
+      </p>
+      <h2
+        class="special-font pt-[50px] md:pt-[80px] xl:pt-[120px] text-center text-[45px] leading-[40px] text-[#014470] md:text-3xl lg:text-5xl mac:text-7xl xl:text-6xl font-normal md:leading-tight lg:leading-[3.8rem]"
+      >
+        Apply for this job
+      </h2>
+      <div
+        class="pt-[3rem] pb-[4.5rem] md:pb-[30px] lg:pt-[4rem] md:max-w-[40rem] lg:max-w-[55rem] xl:max-w-[67rem] mac:max-w-[75rem] mx-auto flex flex-col items-center gap-12 md:flex-row md:justify-between"
+      >
+        <form
+          class="mac:space-y-[2.5rem] w-full space-y-[2.2rem] md:space-y-[2.5rem] lg:space-y-[2.7rem]"
+        >
+          <div class="flex flex-col gap-3">
+            <label
+              htmlFor=""
+              class="md:text-base lg:text-[1.125rem] font-medium leading-[32px] text-[#26465B]"
+            >
+              :
+              <span
+                class="text-[#984429] font-normal leading-[32px] text-sm italic"
+              >
+                (Required)
+              </span>
+            </label>
+
+            <input
+              type="text"
+              id=""
+              =""
+              class="border-2 border-[#E2E2E2] pl-5 focus:outline-blue-300 w-full h-[2.5rem] md:h-[4rem] rounded-md"
+            />
+          </div>
+          <div
+            class="flex flex-grow gap-[2.2rem] md:flex-row w-full md:gap-5 xl:gap-20"
+          >
+            <div class="flex flex-col gap-3 w-full">
+              <label
+                htmlFor="phoneNumber"
+                class="md:text-base hidden md:block lg:text-[1.125rem] font-medium leading-[32px] text-[#26465B]"
+              >
+                Phone Number:
+                <span
+                  class="text-[#984429] font-normal leading-[32px] text-sm italic"
+                >
+                  (Required)
+                </span>
+              </label>
+              <label
+                htmlFor="phoneNumber"
+                class="md:text-base block md:hidden lg:text-[1.125rem] font-medium leading-[32px] text-[#26465B]"
+              >
+                Tel:
+                <span
+                  class="text-[#984429] font-normal leading-[32px] text-sm italic"
+                >
+                  (Required)
+                </span>
+              </label>
+              <input
+                type="text"
+                id="phoneNumber"
+                ="phoneNumber"
+                class="border-2 border-[#E2E2E2] focus:outline-blue-400 pl-5 w-full h-[2.5rem] md:h-[4rem] rounded-md"
+              />
+            </div>
+            <div class="flex flex-col gap-3 w-full">
+              <label
+                htmlFor="email"
+                class="md:text-base lg:text-[1.125rem] font-medium leading-[32px] text-[#26465B]"
+              >
+                Email:
+                <span
+                  class="text-[#984429] font-normal leading-[32px] text-sm italic"
+                >
+                  (Required)
+                </span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="border-2 border-[#E2E2E2] focus:outline-blue-300 w-full pl-5 h-[2.5rem] md:h-[4rem] rounded-md"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 w-full">
+            <label
+              htmlFor="cover letter"
+              class="md:text-base lg:text-[1.125rem] font-medium leading-[32px] text-[#26465B]"
+            >
+              Cover Letter
+              <span
+                class="text-[#984429] font-normal leading-[32px] text-sm italic"
+              >
+                (Required)
+              </span>
+            </label>
+            <textarea
+              name="message"
+              class="border-2 border-[#E2E2E2] pl-5 focus:outline-blue-300 w-full h-[8rem] md:h-[12rem]"
+            ></textarea>
+          </div>
+
+          <article class="flex flex-col gap-5 md:gap-0 pt-3">
+            <div class="flex flex-col gap-3">
+              <p class="text-sm font-medium leading-[32px] text-[#26465B]">
+                Upload CV/Resume
+              </p>
+              <input
+                type="file"
+                class="file:mr-3 file:bg-white file:px-5 file:py-2 file:rounded-lg file:text-[#26465B] file:border-[2px] file:border-[#84C3B3]"
+              />
+
+              <p
+                class="pt-[2px] text-[11px] leading-normal font-normal text-[#26465B]"
+              >
+                Allowed Type(s): .pdf, .doc, .docx
+              </p>
+            </div>
+            <span class="flex gap-7 pt-3 md:pt-5">
+              <input type="checkbox" />
+
+              <p class="text-[#26465B] text-sm font-normal leading-normal">
+                By using this form you agree with the storage and handling of
+                your data by this website. *
+              </p>
+            </span>
+            <button
+              type="submit"
+              class="md:self-start mt-3 md:mt-10 md:px-7 h-[45px] rounded-full bg-[#098666] text-white"
+            >
+              Submit
+            </button>
+          </article>
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
+    <section
+    class='bg-[#012D4A] h-full background-container md:h-full pro:h-full  lg:h-full md:mt-[3.5rem] lg:mt-[3.5rem]'
+  >
+    <article class='md:border-b-2 border-[#005773] px-4 iphone:px-0'>
+      <div class='mac:max-w-[83rem] md:max-w-[45rem] flex gap-3 md:gap-0 flex-col md:flex-row md:justify-between lg:max-w-[60rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[22rem] mx-auto pt-[2rem] md:py-[1rem]'>
+        <div class='flex gap-3 md:gap-5 items-center'>
+          <img src='./images/Logof.png' alt='' />
+          <h3 class='text-white text-[26px] md:text-[36.523px] font-semibold leading-[28.697px]'>
+            FIJAN
+          </h3>
+        </div>
+        <div class='text-white font-semibold leading-normal block pt-[31px] md:hidden'>
+          <h2 class='text-[18px] md:text-[13px] lg:text-[15px] mac:text-lg'>
+            About us
+          </h2>
+  
+          <p class='text-white pt-3 text-[16px]  md:text-[13px] lg:text-[15px] mac:text-lg font-normal leading-[28px]'>
+            At Fijan, we are dedicated to
+            <br /> providing exquisite, personalized
+            <br /> healthcare services.
+          </p>
+          <div class='space-y-[16px] pt-[15px] md:hidden'>
+            <h3 class='text-white text-[16px]  md:text-[13px] lg:text-[15px] mac:text-lg font-semibold leading-normal'>
+              Socials
+            </h3>
+            <div class='text-white flex md:text-xl text-2xl lg:text-2xl space-x-[16px]'>
+              
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest"></i>
+            </div>
+          </div>
+        </div>
+        <div class='flex relative my-[2rem]'>
+          <div class='absolute md:-top-5 top-0 md:right-[2rem] xl:right-3 mac:right-0'>
+            <input
+              type='text'
+              placeholder='Start your health journey'
+              class='md:w-[320px] w-[270px] iphone:w-[290px] lg:w-[420px] placeholder:text-[11px] h-[42px] focus:outline-blue-400 bg-[#F5FDFF] placeholder:text-[#90C2E4] rounded-full pl-4 md:pl-7'
+            />
+            <button class='bg-[#098666]  absolute top-0 -right-10 md:-right-5  text-white px-[32px] py-[10px] rounded-full'>
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class='md:border-b-2 border-[#005773]'>
+      <div class='mac:max-w-[83rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[20rem] iphone:max-w-[22rem] mx-auto pb-[3rem] md:pb-[4rem] lg:pb-[6rem] pt-[2.5rem]'>
+        <div class='grid grid-cols-1 gap-12 md:gap-7 lg:gap-0 md:grid-cols-3 lg:grid-cols-4 xl:gap-x-14 md:justify-center lg:justify-items-center'>
+          <div class='text-white hidden md:flex flex-col font-semibold leading-normal text-[10px]  md:text-[13px] lg:text-[15px] mac:text-lg'>
+            <h2>About us</h2>
+            <p class='text-white pt-3 text-[10px]  md:text-[13px] lg:text-[15px] mac:text-lg font-normal leading-[28px]'>
+              At Fijan, we are dedicated to
+              <br /> providing exquisite, personalized
+              <br /> healthcare services.
+            </p>
+  
+            <div class='space-y-[16px] pt-[32px]'>
+              <h3 class='text-white text-[16px] md:text-[13px] lg:text-[15px] mac:text-lg font-semibold leading-normal'>
+                Socials
+              </h3>
+              <div class='text-white flex md:text-xl text-xl lg:text-2xl space-x-[16px]'>
+                <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest"></i>
+              </div>
+            </div>
+          </div>
+          <span class='flex justify-between md:contents'>
+            <div class='space-y-[16px] pt-[1.5rem] md:pt-0 text-white'>
+              <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
+                Quick links
+              </p>
+              <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                <a href='./index.html'> Home</a>                   </p>
+              <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                <a href ='./about.html'> About us</a>                   </p>
+              <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                <a href ='./employers.html'> Employers</a >                   </p>
+              <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                <a href='./contact.html'> Contact</a>                   </p>
+              <p
+              id="dropdownButton"
+                onClick={toggleDropdown}
+                class='text-white cursor-pointer flex gap-3 text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'
+              >
+                Job Seekers
+                <i id="dropdownIcon" class='fa fa-chevron-down text-sm mt-1'></i>  
+              </p>
+             
+                <div id="dropdownContent" class='text-[11px] dropdown-content space-y-1 lg:text-sm lg:space-y-2 font-normal capitalize -mt-3'>
+                  <p class='hover:text-[#098666] cursor-pointer'>
+                    <a href='./nurses.html'>nurses</a>
+                  </p>
+                  <p class='hover:text-[#098666] cursor-pointer'>
+                    <a href='./medicalDoctor.html'>doctors</a>
+                  </p>
+                  <p class='hover:text-[#098666]'>
+                    <a href='./careSupport.html'>care support</a>
+                  </p>
+                </div>
+             
+            </div>
+  
+            <div class='space-y-[16px] pt-[1.5rem] md:pt-0 text-white'>
+              <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
+                Support
+              </p>
+              <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                Privacy policy
+              </p>
+              <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                FAQ
+              </p>
+              <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                Condition of use
+              </p>
+              <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+                Cookies policy
+              </p>
+            </div>
+          </span>
+          <div class='space-y-[16px] pt-[1.5rem] hidden md:pt-0 text-white'>
+            <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
+              Quick links
+            </p>
+            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+              <a href='./index.html'> Home</a>
+            </p>
+            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+              <a href='./about.html'> About us</a>
+            </p>
+            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+              <a href='./employers.html'> Employers</a>
+            </p>
+            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+              <a href='./contact.html'> Contact</a>
+            </p>
+            <p
+              onClick={toggleDropdown}
+              class='text-white cursor-pointer flex gap-3 text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'
+            >
+              Job Seekers <IoIosArrowDown class='mt-[6px]' />
+            </p>      
+          </div>
+  
+          <div class='space-y-[16px] hidden pt-[1.5rem] md:pt-0 text-white'>
+            <p class='text-white text-[16px]  md:text-[16px] lg:text-[16px] mac:text-lg font-semibold leading-normal'>
+              Support
+            </p>
+            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+              Privacy policy
+            </p>
+            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+              FAQ
+            </p>
+            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+              Condition of use
+            </p>
+            <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+              Cookies policy
+            </p>
+          </div>
+          <div class='space-y-[16px]'>
+            <h3 class='text-white text-[16px]  md:text-[13px] lg:text-[15px] mac:text-lg font-semibold leading-normal'>
+              Contact
+            </h3>
+  
+            <p class='text-white flex gap-2 items-center text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+             
+              <i class="fas fa-map-marker-alt md:text-xl text-2xl lg:text-lg"></i>  Address: 1564 The birminham
+              <br /> road, United Kingdom
+            </p>
+            <p class='text-white flex gap-2 items-center text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+            
+              <i class="fas fa-phone md:text-xl text-2xl lg:text-lg"></i>
+              Email: hello@fijan.co.uk
+            </p>
+            <p class='text-white flex gap-2 items-center text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
+             
+              <i class="fas fa-envelope md:text-xl text-2xl lg:text-lg"></i> Phone: +442200567789
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+  
+    <p class='text-center hidden md:block font-normal mt-7 pb-4 text-[#F0F0F0] text-xs leading-normal'>
+      
+      Copyright © 2023 Fijan
+    </p>
+  </section>
+</main>
+    <script src="./script.js"></script>
+  </body>
+</html>

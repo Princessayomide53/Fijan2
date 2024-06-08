@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:host {
+  --swiper-navigation-size: 20px !important;
+  font-weight: 600;
+  --swiper-theme-color: #014470 !important;
+}
+
 body {
   font-family: 'Inter', sans-serif;
 }
@@ -235,4 +241,48 @@ body {
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
   background: #229ced;
+}
+/* mobile swiper */
+/* :host {
+  --swiper-navigation-size: 20px !important;
+  font-weight: 600;
+  --swiper-theme-color: #014470 !important;
+} */
+.mySwiper {
+  --swiper-navigation-size: 20px !important;
+  --swiper-theme-color: #014470 !important;
+  font-weight: 600;
+}
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  width: 24px !important;
+}
+@media (max-width: 767px) {
+  .swiper-button-next {
+    /* left: 58% !important; */
+    /* transform: translateX(-78%) !important; */
+    right: 5px !important;
+    position: absolute;
+  }
+  .swiper-button-prev {
+    /* left: 58% !important; */
+    /* transform: translateX(-78%) !important; */
+    left: 5px !important;
+    position: absolute;
+  }
 }
