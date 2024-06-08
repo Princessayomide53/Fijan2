@@ -167,31 +167,6 @@ navLinks.forEach((link) => {
 //   }
 // });
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   const navLinks = document.querySelectorAll('.mobile-link');
-//   const currentPath = window.location.pathname.split('/').pop();
-
-//   navLinks.forEach((link) => {
-//     const linkPath = link.getAttribute('href').split('/').pop();
-
-//     if (
-//       linkPath === currentPath ||
-//       (linkPath === '' && currentPath === 'index.html')
-//     ) {
-//       link.classList.add('actives');
-//     }
-
-//     // Check if the current link is part of the Job Seekers dropdown
-//     if (
-//       ['nurses.html', 'medicalDoctor.html', 'careSupport.html'].includes(
-//         currentPath
-//       )
-//     ) {
-//       document.querySelector('.job-seekers-main-link').classList.add('actives');
-//     }
-//   });
-// });
-
 document.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.querySelectorAll('.mobile-link');
   const currentPath = window.location.pathname.split('/').pop();
