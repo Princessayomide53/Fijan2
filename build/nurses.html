@@ -21,6 +21,12 @@
   <body>
     <section
       class="bg-gradient-to-r z-[100] fixed py-[2.6rem] lg:py-14 from-[#ffffff] to-[#71C8E4] w-full"
+
+      style="background: rgba(113, 200, 226, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);"
     >
       <nav
         class="mac:max-w-[83rem] absolute top-7 lg:top-8 z-50 left-0 right-0 md:max-w-[45rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[20.5rem] iphone:max-w-[22rem] lg:max-w-[60rem] mx-auto flex justify-between"
@@ -30,7 +36,7 @@
           <img
             src="./images/Logo.png"
             alt="logo"
-            class="h-[2rem] xl:w-[39.301px] lg:w-[35.301px] lg:h-[45px] xl:h-[49px]"
+            class="ml-2 md:ml-0 h-[2rem] xl:w-[39.301px] lg:w-[35.301px] lg:h-[45px] xl:h-[49px]"
           />
           <h2
             class="text-[#0171BB] md:text-[1.5rem] lg:text-[1.5rem] xl:text-[2rem] mac:text-[2.23rem] font-bold leading-[28.697px]"
@@ -49,14 +55,14 @@
               Job Seekers <i class="fas fa-caret-down"></i>
             </button>
             <div class='dropdown-menu hidden drops absolute top-14 lg:left-[21rem] xl:left-[28.4rem] mac:left-[33rem] w-[195px] h-[108px] mt-2 bg-white shadow-lg rounded-md'>
-            <ul class="space-y-[6px]">
+            <ul class="">
               <li class='pl-5 pt-2 text-[#014470] hover:bg-[#098666] hover:w-full hover:py-1 hover:text-white'><a href="./nurses.html" class="dropdown-item">Nurses</a></li>
               <li class='pl-5 pt-2 text-[#014470] hover:bg-[#098666] hover:w-full hover:py-1 hover:text-white'>
-                <a href="./medicalDoctors.html" class="dropdown-item"
+                <a href="./medicalDoctor.html" class="dropdown-item"
                   >Medical Doctors</a
                 >
               </li>
-              <li class='pl-5 pt-2 text-[#014470] hover:bg-[#098666] hover:w-full hover:py-1 hover:text-white'>
+              <li class='pl-5 pt-2 text-[#014470] hover:bg-[#098666] h-full hover:w-full hover:py-1 hover:text-white'>
                 <a href="./careSupport.html" class="dropdown-item"
                   >Care Support Worker</a
                 >
@@ -65,6 +71,15 @@
           </li>
           <li><a href="./employers.html" class="nav-link xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">Employers</a></li>
           <li><a href="./contact.html" class="nav-link xl:px-7 lg:px-4 py-1 text-[#014470] lg:text-base xl:text-lg leading-[16px] font-medium rounded-full hover:bg-white transition duration-150 border-2 border-[#014470] flex justify-center items-center">Contact Us</a></li>
+
+          <li id="search-icon-1" class="search-icon-1"><a href="javascript:void(0)" class="nav-link py-1 flex justify-center items-center">
+            <svg aria-label="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+
+          </a></li>
         </ul>
         <ul class=" hidden lg:flex">
           <li class="mt-2 lg:px-5 xl:px-7 py-[6px] font-semibold flex justify-center items-center rounded-full bg-[#098666] text-white"><a href="#section1" class=''>Register Now</a></li>
@@ -94,30 +109,30 @@
         </ul></nav>
         <div
           id="mobile-menu-list"
-          class="mobile-menu-list hidden absolute top-0 text-3xl bg-gradient-to-r from-[#ffffff] to-[#71C8E4] w-full z-10 flex items-center origin-start h-[100vh] justify-start center overflow-hidden"
+          class="mobile-menu-list hidden  absolute top-0 bg-gradient-to-r from-[#ffffff] to-[#71C8E4] w-full z-10 flex items-center origin-start h-[100vh] justify-start center overflow-hidden"
         >
-        
           <ul
-            class=" flex flex-col space-y-[3rem] mt-5 p-7 w-full uppercase animate-open-menu"
+            class=" flex flex-col max-w-[20.5rem] md:max-w-[45rem] iphone:max-w-[22rem] mx-auto space-y-[2rem] mt-5 p-3 w-full uppercase animate-open-menu"
           >
           <li class="">
-            <a class="mobile-link text-[#014470] hover:text-[#098666]" href="./index.html">Home</a>
+            <a class="mobile-link text-[#014470] hover:text-[#098666] text-3xl" href="./index.html">Home</a>
           </li>
             <li class="">
-              <a class="text-[#014470] mobile-link hover:text-[#098666]" href="./about.html">About</a>
+              <a class="text-[#014470] mobile-link hover:text-[#098666] text-3xl" href="./about.html">About</a>
             </li>
+
             <li 
             onClick={toggleNavdown}
             id="dropdownButtons"
-             class="text-[#014470] flex justify-between mobile-link hover:text-[#098666] relative text-3xl">
+             class="text-[#014470] flex job-seekers-main-link justify-between mobile-link hover:text-[#098666] relative text-3xl">
               Job Seekers  
                  <i id="navIcon" class='fa fa-chevron-down text-base mt-2'></i>  
                  
                  
-              <div id="navContent" class='absolute dropdown-content top-10 md:top-12 left-0 w-full h-[136.5px] bg-white shadow-lg rounded-md'>
-                <ul class='space-y-[10px]'>
+              <div id="navContent" class='absolute dropdown-content mobile-link top-10 md:top-12 left-0 w-full h-[136.5px] bg-white shadow-lg rounded-md'>
+                <ul class='space-y-[10px] mobile-link'>
                   <li
-                    class="pl-5 pt-2 hover:bg-[#098666] text-xl hover:w-full hover:py-1 hover:text-white"
+                    class="pl-5 pt-2 hover:bg-[#098666] mobile-link text-xl hover:w-full hover:py-1 hover:text-white"
                   >
                     <a href='./nurses.html'>
                      Nurses
@@ -125,14 +140,14 @@
                   </li>
 
                   <li
-                    class="pl-5 pt-2 hover:bg-[#098666] text-xl hover:w-full hover:py-1 hover:text-white"
+                    class="pl-5 pt-2 hover:bg-[#098666] mobile-link text-xl hover:w-full hover:py-1 hover:text-white"
                   >
                     <a href='./medicalDoctor.html'>                   
                       Medical doctors
                     </a>
                   </li>
                   <li
-                    class="pl-5 pt-2 hover:bg-[#098666] text-xl uppercase hover:w-full hover:py-1 hover:text-white"
+                    class="pl-5 pt-2 hover:bg-[#098666] mobile-link text-xl uppercase hover:w-full hover:py-1 hover:text-white"
                   >
                     <a href='./careSupport.html'> 
                       Care support worker
@@ -142,16 +157,101 @@
               </div>
             </li>
             <li>
-              <a class='text-[#014470] mobile-link hover:text-[#098666]' href="./contact.html">Contact Us</a>
+              <a class='text-[#014470] mobile-link text-3xl hover:text-[#098666]' href="./contact.html">Contact Us</a>
             </li>
             <li>
-              <a class='text-[#014470] mobile-link hover:text-[#098666]' href="./employers.html">Employers</a>
+              <a class='text-[#014470] mobile-link text-3xl hover:text-[#098666]' href="./employers.html">Employers</a>
             </li>
+            <li id="search-icon-2" class="search-icon-2"><a href="javascript:void(0)" class="nav-link py-1 flex justify-self-end items-center">
+                <svg aria-label="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+            
+              </a></li>
+              <div id="search-form-2" class="hidden search-form-2"  aria-hidden="true">
+                <form>
+              <label
+                class="relative bg-white min-w-sm max-w-2xl flex flex-col md:flex-row items-center justify-center border py-2 px-2 rounded-2xl gap-2 shadow-2xl focus-within:border-gray-300"
+                for="search-bar">
+                <input type="search" id="search-bar" placeholder="your keyword here"
+            class="px-6 py-2 w-full rounded-md flex-1 outline-none bg-white">
+                  <button
+                    class="w-full md:w-auto px-6 py-3 bg-[#098666] border-[#098666] text-white fill-white active:scale-95 duration-100 border will-change-transform overflow-hidden relative rounded-xl transition-all disabled:opacity-70">
+                  
+                    <div class="relative">
+                  
+                      <!-- Loading animation change opacity to display -->
+                      <div
+                        class="flex items-center justify-center h-3 w-3 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 transition-all">
+                        <svg class="opacity-0 animate-spin w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 24 24">
+                          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                          <path class="opacity-75" fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                          </path>
+                        </svg>
+                      </div>
+                  
+                      <div class="flex items-center transition-all opacity-1 valid:"><span
+                          class="text-sm font-semibold whitespace-nowrap truncate mx-auto">
+                          Search
+                        </span>
+                      </div>
+                  
+                    </div>
+                  
+                  </button>
+              </label>
+              </form>
+              </div>
+              
             <!-- <li>
               <a href="contact.html"> book now</a>
             </li> -->
           </ul>
-        </div>    
+        </div>
+      
+        <!-- search form starts -->
+        <div id="search-form-1" class="hidden search-form-1" aria-hidden="true">
+          <form>
+        <label
+          class="mx-auto mt-20 relative bg-white min-w-sm max-w-2xl flex flex-col md:flex-row items-center justify-center border py-2 px-2 rounded-2xl gap-2 shadow-2xl focus-within:border-gray-300"
+          for="search-bar">
+          <input id="search-bar" placeholder="your keyword here"
+            class="px-6 py-2 w-full rounded-md flex-1 outline-none bg-white">
+          <button
+            class="w-full md:w-auto px-6 py-3 bg-[#098666] border-[#098666] text-white fill-white active:scale-95 duration-100 border will-change-transform overflow-hidden relative rounded-xl transition-all disabled:opacity-70">
+        
+            <div class="relative">
+        
+              <!-- Loading animation change opacity to display -->
+              <div
+                class="flex items-center justify-center h-3 w-3 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 transition-all">
+                <svg class="opacity-0 animate-spin w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                  </path>
+                </svg>
+              </div>
+        
+              <div class="flex items-center transition-all opacity-1 valid:"><span
+                  class="text-sm font-semibold whitespace-nowrap truncate mx-auto">
+                  Search
+                </span>
+              </div>
+        
+            </div>
+        
+          </button>
+        </label>
+        </form>
+</div>
+        <!-- search form ends -->
+      
     </section>
     <main>
         <!-- hero -->
@@ -316,7 +416,7 @@
                     placeholder='Search'
                     class='bg-white flex-1 xl:flex-none xl:px-5 py-3 placeholder:text-[#90C2E4] pl-5 focus:outline-blue-300 border-2 border-[#E2E2E2]'
                   />
-                  <CiSearch class='absolute text-[#26465B] right-5 top-3 text-2xl font-semibold' />
+                  <i class='fa fa-search absolute text-[#26465B] right-5 top-3 text-2xl font-semibold' ></i>
                 </div>
                 <div class='relative hidden md:flex flex-1 xl:flex-none'>
                   
@@ -326,7 +426,7 @@
                     <option class='text-[#26465B]'>Medical Doctors</option>
                     <option class='text-[#26465B]'>Care Support Worker</option>
                   </select>
-                  <IoIosArrowDown class='text-base md:text-xl  text-[#26465B] absolute right-5 top-[18px] z-20' />
+                  <i class='fa fa-chevron-down text-base md:text-xl  text-[#26465B] absolute right-5 top-[18px] z-20' ></i>
                 </div>
               </article>
         
@@ -339,7 +439,7 @@
                     <option class='text-[#26465B]'>Medical Doctors</option>
                     <option class='text-[#26465B]'>Care Support Worker</option>
                   </select>
-                  <IoIosArrowDown class=' md:text-xl text-base  text-[#26465B] absolute right-[14px] md:right-5 top-[18px] z-20' />
+                  <i class='fa fa-chevron-down md:text-xl text-base  text-[#26465B] absolute right-[14px] md:right-5 top-[18px] z-20' ></i>
                 </div>
                 <div class='relative flex flex-1 xl:flex-none'>
                   
@@ -349,7 +449,7 @@
                     <option class='text-[#26465B]'>Per Time</option>
                     <option class='text-[#26465B]'>Contract</option>
                   </select>
-                  <IoIosArrowDown class='text-base md:text-xl text-[#26465B] absolute right-5 top-[18px] z-20' />
+                  <i class='fa fa-chevron-down text-base md:text-xl text-[#26465B] absolute right-5 top-[18px] z-20' ></i>
                 </div>
         
                 <div class='relative hidden md:flex flex-1 xl:flex-none'>
@@ -361,7 +461,7 @@
                     <option class='text-[#26465B]'>New York</option>
                     <option class='text-[#26465B]'>LA</option>
                   </select>
-                  <IoIosArrowDown class='text-base md:text-xl text-[#26465B] absolute right-5 top-[18px] z-20' />
+                  <i class='fa fa-chevron-down text-base md:text-xl text-[#26465B] absolute right-5 top-[18px] z-20' ></i>
                 </div>
               </div>
               <div class='relative mt-7 md:hidden flex flex-1 xl:flex-none'>
@@ -373,7 +473,7 @@
                   <option class='text-[#26465B]'>Northampton </option>
                   <!-- {/* <option class='text-[#26465B]'>LA</option> */} -->
                 </select>
-                <IoIosArrowDown class='text-base md:text-xl text-[#26465B] absolute right-5 top-[18px] z-20' />
+                <i class='fa fa-chevron-down text-base md:text-xl text-[#26465B] absolute right-5 top-[18px] z-20' ></i>
               </div>
         
               <button class='xl:flex-none text-sm md:text-lg mt-10 xl:mt-0 py-3 lg:px-5 xl:px-7 rounded-full xl:py-0 bg-[#098666] text-white'>
@@ -382,11 +482,11 @@
             </div>
           </section>
           <!-- jobs -->
-          <section class='mac:max-w-[83rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[20.5rem] iphone:max-w-[22rem] mx-auto pt-[3.5rem] pb-[2rem] md:py-[3rem] lg:py-0 lg:pt-[3rem] lg:pb-[4rem] xl:pb-[0rem] xl:pt-[3rem] mac:pt-[4rem] mac:pb-[2rem]'>
+          <section class='mac:max-w-[83rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-[75rem] pro:max-w-[52rem] max-w-[20.5rem] iphone:max-w-[22rem] mx-auto pt-[3.5rem] pb-[2rem] md:py-[3rem] lg:py-0 lg:pt-[3rem] lg:pb-[3rem] xl:pb-[2rem] xl:pt-[3rem] mac:pt-[4rem] mac:pb-[3rem]'>
             <h6 class='text-center pb-[12px] md:pb-0 text-lg text-[#098666] lg:text-[1.25rem] xl:text-[1.4rem] font-semibold leading-[1.25rem] '>
               HOT JOBS
             </h6>
-        
+      
             <h1 class='text-center special-font text-[42px] leading-[40px] md:text-4xl md:leading-normal lg:leading-[3.85rem] font-normal lg:text-5xl xl:text-6xl mac:text-7xl text-[#014470] '>
               Nursing and Healthcare Hot jobs
             </h1>
@@ -411,7 +511,7 @@
                     A beautiful Nursing home in the leafy town of Sutton Coldfield, sitting on bus and tarain routesiffering regular hours to experienced staff
                   </p>
                   <p class='text-white lg:pt-[0.8rem] pt-[0.5rem] xl:pt-[1rem] underline text-[16px] md:text-sm xl:text-base font-light leading-[1.35rem]'>
-                    <Link to='/jobs'>SEE FULL DETAILS HERE</Link>
+                    <a href='./jobs.html'>SEE FULL DETAILS HERE</a>
                   </p>
                 </div>
              <!-- 2nd job -->
@@ -434,7 +534,7 @@
                A beautiful Nursing home in the leafy town of Sutton Coldfield, sitting on bus and tarain routesiffering regular hours to experienced staff
              </p>
              <p class='text-white lg:pt-[0.8rem] pt-[0.5rem] xl:pt-[1rem] underline text-[16px] md:text-sm xl:text-base font-light leading-[1.35rem]'>
-               <Link to='/jobs'>SEE FULL DETAILS HERE</Link>
+              <a href='./jobs.html'>SEE FULL DETAILS HERE</a>
              </p>
            </div>
            <!-- 3rd -->
@@ -457,14 +557,14 @@
              A beautiful Nursing home in the leafy town of Sutton Coldfield, sitting on bus and tarain routesiffering regular hours to experienced staff
            </p>
            <p class='text-white lg:pt-[0.8rem] pt-[0.5rem] xl:pt-[1rem] underline text-[16px] md:text-sm xl:text-base font-light leading-[1.35rem]'>
-             <Link to='/jobs'>SEE FULL DETAILS HERE</Link>
+             <a href='./jobs.html'>SEE FULL DETAILS HERE</a>
            </p>
          </div>
             </div>
-            <div class='flex md:justify-center'>
+            <div class='flex md:justify-center px-2 md:px-0'>
               <button class='bg-[#098666] flex-grow justify-center md:flex-grow-0 mb-[15px] md:my-[2rem] lg:my-[3rem] xl:my-[0rem] flex gap-3 text-lg font-medium leading-[16px] text-white px-7 py-5 md:py-3 rounded-full'>
-                <Link to='/employers'> Explore Careers</Link>
-                <IoArrowForward class='text-white text-[18px]' />
+                <a href='./employers.html'> Explore Careers</Link>
+                <i class='fa fa-arrow-right ml-5 text-white text-[18px]' ></i>
               </button>
             </div>
           </section>
@@ -546,17 +646,13 @@
                       Quick links
                     </p>
                     <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-                      <Link to='/'> Home</Link>
-                    </p>
+                      <a href='./index.html'> Home</a>                   </p>
                     <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-                      <Link to='/about'> About us</Link>
-                    </p>
+                      <a href ='./about.html'> About us</a>                   </p>
                     <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-                      <Link to='/employers'> Employers</Link>
-                    </p>
+                      <a href ='./employers.html'> Employers</a >                   </p>
                     <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-                      <Link to='/contact'> Contact</Link>
-                    </p>
+                      <a href='./contact.html'> Contact</a>                   </p>
                     <p
                     id="dropdownButton"
                       onClick={toggleDropdown}
@@ -568,13 +664,13 @@
                    
                       <div id="dropdownContent" class='text-[11px] dropdown-content space-y-1 lg:text-sm lg:space-y-2 font-normal capitalize -mt-3'>
                         <p class='hover:text-[#098666] cursor-pointer'>
-                          <Link to='/nurses'>nurses</Link>
+                          <a href='./nurses.html'>nurses</a>
                         </p>
                         <p class='hover:text-[#098666] cursor-pointer'>
-                          <Link to='/medicalDoctors cursor-pointer'>doctors</Link>
+                          <a href='./medicalDoctor.html'>doctors</a>
                         </p>
                         <p class='hover:text-[#098666]'>
-                          <Link to='/careSupport'>care support</Link>
+                          <a href='./careSupport.html'>care support</a>
                         </p>
                       </div>
                    
@@ -603,16 +699,16 @@
                     Quick links
                   </p>
                   <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-                    <Link to='/'> Home</Link>
+                    <a href='./index.html'> Home</a>
                   </p>
                   <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-                    <Link to='/about'> About us</Link>
+                    <a href='./about.html'> About us</a>
                   </p>
                   <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-                    <Link to='/employers'> Employers</Link>
+                    <a href='./employers.html'> Employers</a>
                   </p>
                   <p class='text-white text-[14px]  md:text-[13px] lg:text-[14px] mac:text-base font-normal leading-normal'>
-                    <Link to='/contact'> Contact</Link>
+                    <a href='./contact.html'> Contact</a>
                   </p>
                   <p
                     onClick={toggleDropdown}
