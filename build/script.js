@@ -15,28 +15,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-
   //
   const searchIcon = document.querySelector('.search-icon-1');
-  const searchForm = document.querySelector(".search-form-1");
+  const searchForm = document.querySelector('.search-form-1');
 
   searchIcon.addEventListener('click', () => {
-
     // searchForm.style.backdropFilter = blur('5px');
-searchForm.classList.toggle('hidden');
+    searchForm.classList.toggle('hidden');
   });
 
+  const searchIcon2 = document.querySelector('.search-icon-2');
+  const searchForm2 = document.querySelector('.search-form-2');
 
-  const searchIcon2 = document.querySelector(".search-icon-2");
-  const searchForm2 = document.querySelector(".search-form-2");
-
-  searchIcon2.addEventListener("click", () => {
-    
+  searchIcon2.addEventListener('click', () => {
     // searchForm.style.backdropFilter = blur('5px');
-    searchForm2.classList.toggle("hidden");
+    searchForm2.classList.toggle('hidden');
     searchIcon2.style.display = 'none';
   });
-
 });
 
 // dropdown nav
@@ -160,16 +155,72 @@ navLinks.forEach((link) => {
 });
 
 // nav-links for mobile screen
-const navLinks2 = document.querySelectorAll('.mobile-link');
+// const navLinks2 = document.querySelectorAll('.mobile-link');
 
-navLinks2.forEach((link) => {
-  const currentHref = window.location.href; // Get the current URL
+// navLinks2.forEach((link) => {
+//   const currentHref = window.location.href; // Get the current URL
 
-  // Check if the current URL matches the link's href
-  if (currentHref.endsWith(link.href)) {
-    console.log(link.href);
-    link.classList.add('actives');
-  }
+//   // Check if the current URL matches the link's href
+//   if (currentHref.endsWith(link.href)) {
+//     console.log(link.href);
+//     link.classList.add('actives');
+//   }
+// });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   const navLinks = document.querySelectorAll('.mobile-link');
+//   const currentPath = window.location.pathname.split('/').pop();
+
+//   navLinks.forEach((link) => {
+//     const linkPath = link.getAttribute('href').split('/').pop();
+
+//     if (
+//       linkPath === currentPath ||
+//       (linkPath === '' && currentPath === 'index.html')
+//     ) {
+//       link.classList.add('actives');
+//     }
+
+//     // Check if the current link is part of the Job Seekers dropdown
+//     if (
+//       ['nurses.html', 'medicalDoctor.html', 'careSupport.html'].includes(
+//         currentPath
+//       )
+//     ) {
+//       document.querySelector('.job-seekers-main-link').classList.add('actives');
+//     }
+//   });
+// });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const navLinks = document.querySelectorAll('.mobile-link');
+  const currentPath = window.location.pathname.split('/').pop();
+
+  navLinks.forEach((link) => {
+    const href = link.getAttribute('href');
+    if (href) {
+      const linkPath = href.split('/').pop();
+
+      if (
+        linkPath === currentPath ||
+        (linkPath === '' && currentPath === 'index.html')
+      ) {
+        link.classList.add('actives');
+      }
+
+      // Check if the current link is part of the Job Seekers dropdown
+      if (
+        ['nurses.html', 'medicalDoctor.html', 'careSupport.html'].includes(
+          currentPath
+        )
+      ) {
+        const jobSeekersLink = document.querySelector('.job-seekers-main-link');
+        if (jobSeekersLink) {
+          jobSeekersLink.classList.add('actives');
+        }
+      }
+    }
+  });
 });
 
 // toggle mobile nav
@@ -196,3 +247,26 @@ const toggleNavdown = () => {
 document
   .getElementById('dropdownButtons')
   .addEventListener('click', toggleNavdown);
+
+// swiper coverflow
+var TrandingSlider = new Swiper('.tranding-slider', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2.5,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
