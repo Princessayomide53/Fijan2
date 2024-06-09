@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -628,6 +628,10 @@ video {
 
 .-right-10 {
   right: -2.5rem;
+}
+
+.-right-\[1\.5rem\] {
+  right: -1.5rem;
 }
 
 .left-0 {
@@ -3357,6 +3361,11 @@ swiper-slide img {
   .md\:px-\[25px\] {
     padding-left: 25px;
     padding-right: 25px;
+  }
+
+  .md\:px-\[32px\] {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .md\:py-0 {
