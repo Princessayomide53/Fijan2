@@ -226,7 +226,7 @@ document
 // swiper coverflow
 var TrandingSlider = new Swiper('.tranding-slider', {
   effect: 'coverflow',
-  grabCursor: true,
+  grabCursor: false,
   centeredSlides: true,
   loop: true,
   slidesPerView: 'auto',

@@ -101,6 +101,7 @@ body {
 
 .swiper-slide {
   width: 26rem !important;
+  height: 32rem !important;
 }
 
 #tranding .tranding-slider {
@@ -117,7 +118,7 @@ body {
 
 .tranding-slide {
   width: 26rem;
-  height: 26rem;
+  height: 42rem;
   position: relative;
 }
 
@@ -142,10 +143,12 @@ body {
 .swiper-slide-shadow-right {
   display: none;
 }
-
+#swiper-wrapper-e102b95b3afd41242.swiper-wrapper {
+  height: 42rem;
+}
 .tranding-slider-control {
   position: relative;
-  bottom: 2rem;
+  bottom: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,8 +183,8 @@ body {
 @media (min-width: 768px) {
   .tranding-slider-control .slider-arrow {
     background: white;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     left: 42%;
     transform: translateX(-42%);
@@ -192,12 +195,13 @@ body {
 @media (min-width: 1280px) {
   .tranding-slider-control .slider-arrow {
     background: white;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     left: 42%;
     transform: translateX(-42%);
     filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+    z-index: 20 !important;
   }
   .tranding-slider-control .swiper-button-next {
     left: 58% !important;
@@ -207,8 +211,8 @@ body {
 @media (min-width: 1024px) {
   .tranding-slider-control .slider-arrow {
     background: white;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     left: 36%;
     transform: translateX(-42%);
@@ -220,7 +224,7 @@ body {
   }
 }
 
-.tranding-slider-control .slider-arrow i {
+.tranding-slider-control .slider-arrow ion-icon {
   font-size: 1.2rem;
   color: #222224;
   cursor: pointer;
@@ -236,20 +240,26 @@ body {
 .tranding-slider-control .swiper-pagination {
   position: relative;
   width: 15rem;
-  bottom: 1rem;
+  top: 5px;
+  bottom: 0.5rem;
 }
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
   filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  /* margin-top: 36px; */
 }
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
   background: #229ced;
+  /* margin-top: 36px; */
+}
+.swiper-pagination {
+  z-index: 10 !important;
 }
 
 /* mobile swiper */
 
-/* .mySwiper {
+.mySwiper {
   --swiper-navigation-size: 20px !important;
   --swiper-theme-color: #014470 !important;
   font-weight: 600;
@@ -268,32 +278,32 @@ swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-} */
-/* .swiper-button-prev svg,
+}
+.swiper-button-prev svg,
 .swiper-button-next svg {
   width: 24px !important;
-} */
-/* @media (min-width: 768px) {
+}
+@media (min-width: 768px) {
   .swiper-button-prev svg,
   .swiper-button-next svg {
-    display: none;
+    /* display: none; */
   }
 }
 @media (max-width: 767px) {
   .swiper-button-next {
     /* left: 58% !important; */
     /* transform: translateX(-78%) !important; */
-    /* right: 5px !important;
+    right: 5px !important;
     position: absolute;
   }
-  .swiper-button-prev { */
+  .swiper-button-prev {
     /* left: 58% !important; */
     /* transform: translateX(-78%) !important; */
-    /* left: 5px !important;
+    left: 5px !important;
     position: absolute;
   }
   .swiper-button-prev svg,
   .swiper-button-next svg {
     width: 24px !important;
   }
-} */ */
+}
