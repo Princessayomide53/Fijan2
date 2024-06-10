@@ -16,6 +16,15 @@ body {
 }
 .card::-webkit-scrollbar {
   width: 0px;
+  scroll-behavior: smooth;
+}
+#scroll-container {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+#scroll-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 .faq-item.open .faq-question {

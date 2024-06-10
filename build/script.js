@@ -245,3 +245,24 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+// scroll-bar arrows
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollContainer = document.getElementById('scroll-container');
+  const leftArrow = document.getElementById('left-arrow');
+  const rightArrow = document.getElementById('right-arrow');
+
+  leftArrow.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+      left: -300, // Adjust the value as needed
+      behavior: 'smooth',
+    });
+  });
+
+  rightArrow.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+      left: 300, // Adjust the value as needed
+      behavior: 'smooth',
+    });
+  });
+});
