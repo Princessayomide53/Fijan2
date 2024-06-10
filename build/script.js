@@ -254,14 +254,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   leftArrow.addEventListener('click', () => {
     scrollContainer.scrollBy({
-      left: -300, // Adjust the value as needed
+      left: -300,
       behavior: 'smooth',
     });
   });
 
   rightArrow.addEventListener('click', () => {
     scrollContainer.scrollBy({
-      left: 300, // Adjust the value as needed
+      left: 300,
       behavior: 'smooth',
     });
   });
