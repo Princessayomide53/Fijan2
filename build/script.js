@@ -226,7 +226,7 @@ document
 // swiper coverflow
 var TrandingSlider = new Swiper('.tranding-slider', {
   effect: 'coverflow',
-  grabCursor: true,
+  grabCursor: false,
   centeredSlides: true,
   loop: true,
   slidesPerView: 'auto',
@@ -244,4 +244,25 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+});
+
+// scroll-bar arrows
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollContainer = document.getElementById('scroll-container');
+  const leftArrow = document.getElementById('left-arrow');
+  const rightArrow = document.getElementById('right-arrow');
+
+  leftArrow.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+      left: -300,
+      behavior: 'smooth',
+    });
+  });
+
+  rightArrow.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+      left: 300,
+      behavior: 'smooth',
+    });
+  });
 });
