@@ -893,6 +893,10 @@ video {
   margin-top: 12rem;
 }
 
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1160,6 +1164,10 @@ video {
 
 .max-w-\[22rem\] {
   max-width: 22rem;
+}
+
+.max-w-\[75rem\] {
+  max-width: 75rem;
 }
 
 .flex-1 {
@@ -3198,6 +3206,14 @@ swiper-slide img {
     height: 100%;
   }
 
+  .md\:h-\[29rem\] {
+    height: 29rem;
+  }
+
+  .md\:h-\[33rem\] {
+    height: 33rem;
+  }
+
   .md\:max-h-\[36\.5rem\] {
     max-height: 36.5rem;
   }
@@ -3320,6 +3336,10 @@ swiper-slide img {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 
   .md\:items-start {
@@ -3781,6 +3801,18 @@ swiper-slide img {
     line-height: 1rem;
   }
 
+  .md\:text-\[15\.5px\] {
+    font-size: 15.5px;
+  }
+
+  .md\:text-\[15px\] {
+    font-size: 15px;
+  }
+
+  .md\:text-\[14\.5px\] {
+    font-size: 14.5px;
+  }
+
   .md\:font-normal {
     font-weight: 400;
   }
@@ -4100,6 +4132,22 @@ swiper-slide img {
     height: 28.5rem;
   }
 
+  .lg\:h-\[34\.5rem\] {
+    height: 34.5rem;
+  }
+
+  .lg\:h-\[37\.5rem\] {
+    height: 37.5rem;
+  }
+
+  .lg\:h-\[38\.5rem\] {
+    height: 38.5rem;
+  }
+
+  .lg\:h-\[38rem\] {
+    height: 38rem;
+  }
+
   .lg\:max-h-\[304px\] {
     max-height: 304px;
   }
@@ -4230,6 +4278,10 @@ swiper-slide img {
 
   .lg\:max-w-\[60rem\] {
     max-width: 60rem;
+  }
+
+  .lg\:max-w-\[58rem\] {
+    max-width: 58rem;
   }
 
   .lg\:flex-shrink-0 {
@@ -4656,6 +4708,10 @@ swiper-slide img {
     line-height: 1.75rem;
   }
 
+  .lg\:text-\[17\.5px\] {
+    font-size: 17.5px;
+  }
+
   .lg\:leading-\[1\.4rem\] {
     line-height: 1.4rem;
   }
@@ -4867,6 +4923,14 @@ swiper-slide img {
     height: 49px;
   }
 
+  .xl\:h-\[35\.7rem\] {
+    height: 35.7rem;
+  }
+
+  .xl\:h-\[38\.7rem\] {
+    height: 38.7rem;
+  }
+
   .xl\:w-\[17\.9375rem\] {
     width: 17.9375rem;
   }
@@ -4959,6 +5023,10 @@ swiper-slide img {
     max-width: 75rem;
   }
 
+  .xl\:max-w-\[68rem\] {
+    max-width: 68rem;
+  }
+
   .xl\:flex-none {
     flex: none;
   }
@@ -5016,6 +5084,12 @@ swiper-slide img {
     --tw-space-y-reverse: 0;
     margin-top: calc(12px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(12px * var(--tw-space-y-reverse));
+  }
+
+  .xl\:space-y-\[14px\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(14px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(14px * var(--tw-space-y-reverse));
   }
 
   .xl\:rounded-br-\[32px\] {
@@ -5205,6 +5279,11 @@ swiper-slide img {
     line-height: 1.75rem;
   }
 
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .xl\:leading-\[1\.75rem\] {
     line-height: 1.75rem;
   }
@@ -5339,6 +5418,14 @@ swiper-slide img {
     height: 32rem;
   }
 
+  .mac\:h-\[37\.7rem\] {
+    height: 37.7rem;
+  }
+
+  .mac\:h-\[42\.7rem\] {
+    height: 42.7rem;
+  }
+
   .mac\:w-\[19\.9375rem\] {
     width: 19.9375rem;
   }
@@ -5389,6 +5476,10 @@ swiper-slide img {
 
   .mac\:w-\[80rem\] {
     width: 80rem;
+  }
+
+  .mac\:w-full {
+    width: 100%;
   }
 
   .mac\:max-w-\[65rem\] {
@@ -5582,6 +5673,11 @@ swiper-slide img {
 
   .mac\:text-lg {
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .mac\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
